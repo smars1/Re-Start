@@ -26,7 +26,7 @@ Esta extension nos permitira visualizar nuestro codigo html en VSCode, lo mejor 
 
 El Doctype (<!DOCTYPE html>) o “Declaración del tipo de documento” es una instrucción especial que va al inicio de nuestro documento HTML y que permite al navegador entender qué versión de HTML estamos utilizando.
 
-#### example: html estructure the hello world!
+#### example: html structure the hello world!
 
 ```html
 <!DOCTYPE html>
