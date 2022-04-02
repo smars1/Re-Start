@@ -1,5 +1,14 @@
 ### Aspectos de HTML basicos 
+#### Hypertext Markup Language
 ###### autor: Diego Atzin Pineda Cota
+
+**Table of contents**
+
+
+- [Extenciones de VSCode para html](https://github.com/smars1/Re-Start/edit/main/Html5/Readme.md#extenciones-de-vscode-para-html)
+- [!DOCTYPE html](https://github.com/smars1/Re-Start/edit/main/Html5/Readme.md#doctype-html)
+- [Buenas Practicas html](https://github.com/smars1/Re-Start/edit/main/Html5/Readme.md#buenas-practicas-html)
+
 # Extenciones de VSCode para html 
 
 - Prettier - Code formatter:
