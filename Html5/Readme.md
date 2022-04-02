@@ -8,6 +8,7 @@
 - [Extenciones de VSCode para html](https://github.com/smars1/Re-Start/edit/main/Html5/Readme.md#extenciones-de-vscode-para-html)
 - [!DOCTYPE html](https://github.com/smars1/Re-Start/edit/main/Html5/Readme.md#doctype-html)
 - [Buenas Practicas html](https://github.com/smars1/Re-Start/edit/main/Html5/Readme.md#buenas-practicas-html)
+- [Descripcion de los codigos](https://github.com/smars1/Re-Start/edit/main/Html5/Readme.md#descripcion-de-los-codigos)
 
 # Extenciones de VSCode para html 
 
@@ -53,4 +54,9 @@ El Doctype (<!DOCTYPE html>) o “Declaración del tipo de documento” es una i
 # Buenas Practicas html
 
 - Cuando estamos trabajando con sistemas web, la pagina inicial de nuestra aplicacion por lo regular se llamara index.html
+
+# Descripcion de los codigos
+
+- index.html:
+Primera pagina html, usamos tag basicos y un charset (juego de caracteres) con el fin de que nuestra pagina sorporte los acentos
 
