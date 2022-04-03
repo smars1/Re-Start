@@ -13,6 +13,8 @@
 
 - [Descripcion de los codigos](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html#descripcion-de-los-codigos)
 
+- [Temario](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html#temario)
+
 # Extenciones de VSCode para html 
 
 - Prettier - Code formatter:
