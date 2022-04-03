@@ -85,3 +85,8 @@ for example:
 - index.html:
 Primera pagina html, usamos tag basicos y un charset (juego de caracteres) con el fin de que nuestra pagina sorporte los acentos
 
+# Temario
+- *Leccion 1: Introduccion a HTML*
+- *Leccion 2: Elementos basicos de HTML*
+
+
