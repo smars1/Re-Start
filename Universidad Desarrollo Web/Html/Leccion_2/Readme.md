@@ -41,7 +41,6 @@ En esta leccion se veran los tags o etiquetas basicas de html.
 Este tag permite referenciar un link al nombre o linea de texto, como muestra el ejemplo necesitamos una ruta local o direccion web y el nombre que le quedamos referenciar, al hacer clic al nombre nos redireccionara automaticamente en la misma pestaña al link adjunto.
 
 # tag: a href="" target="_blank"
-- [a href="" target="_blank"]()
 ```html
 <a href="https://" target="_blank">Ir a nombre de la pagina, abre en otra pestaña <a/>
 ```
