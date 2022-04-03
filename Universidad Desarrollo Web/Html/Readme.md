@@ -78,6 +78,7 @@ for example:
 </body>
 </html>
 ```
+- Siempre deberemos recomendar escribir los tags y atributos en minusculas
 
 # Descripcion de los codigos
 
