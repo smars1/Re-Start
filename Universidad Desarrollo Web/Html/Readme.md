@@ -5,10 +5,13 @@
 **Table of contents**
 
 
-- [Extenciones de VSCode para html](https://github.com/smars1/Re-Start/edit/main/Html5/Readme.md#extenciones-de-vscode-para-html)
-- [!DOCTYPE html](https://github.com/smars1/Re-Start/edit/main/Html5/Readme.md#doctype-html)
-- [Buenas Practicas html](https://github.com/smars1/Re-Start/edit/main/Html5/Readme.md#buenas-practicas-html)
-- [Descripcion de los codigos](https://github.com/smars1/Re-Start/edit/main/Html5/Readme.md#descripcion-de-los-codigos)
+- [Extenciones de VSCode para html](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html#extenciones-de-vscode-para-html)
+
+- [!DOCTYPE html](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html#doctype-html)
+
+- [Buenas Practicas html](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html#buenas-practicas-html)
+
+- [Descripcion de los codigos](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html#descripcion-de-los-codigos)
 
 # Extenciones de VSCode para html 
 
