@@ -42,7 +42,7 @@ El Doctype (<!DOCTYPE html>) o “Declaración del tipo de documento” es una i
 <!DOCTYPE html>
 <html>
   <head>
-    <mate charest="utf-8" />
+    <meta charest="utf-8" />
     <title>Hello Word!</title>
   <head>
   <body>
@@ -54,6 +54,27 @@ El Doctype (<!DOCTYPE html>) o “Declaración del tipo de documento” es una i
 # Buenas Practicas html
 
 - Cuando estamos trabajando con sistemas web, la pagina inicial de nuestra aplicacion por lo regular se llamara index.html
+
+- Siempre deberemos cerrar con un diagonal para cerrar las etiquetas aunque sean vacias como en los meta,
+
+for example:
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Elementos basicos HTML</title>
+</head>
+<body>
+    <h1></h1>
+    <p>cualquier texto </p>
+
+</body>
+</html>
+```
 
 # Descripcion de los codigos
 
