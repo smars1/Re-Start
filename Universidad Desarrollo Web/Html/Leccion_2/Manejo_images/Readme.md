@@ -1,5 +1,5 @@
  # Control de imagenes hmtl
- 
+ ###### Autor: Diego Atzin Pineda Cota
  **Table of content** 
  
 - ### [Tag de imagen | img src="image.png"](https://github.com/smars1/Re-Start/new/main/Universidad%20Desarrollo%20Web/Html/Leccion_2/Manejo_images#tag-de-imagen--img-srcimagepng)
