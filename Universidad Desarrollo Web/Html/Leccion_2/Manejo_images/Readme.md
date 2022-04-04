@@ -13,6 +13,8 @@
     - [width](https://github.com/smars1/Re-Start/new/main/Universidad%20Desarrollo%20Web/Html/Leccion_2/Manejo_images#width)
 
     - [height](https://github.com/smars1/Re-Start/new/main/Universidad%20Desarrollo%20Web/Html/Leccion_2/Manejo_images#height)
+
+    - [Atributo alt | Atributo title](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_2/Manejo_images#atributo-alt--atributo-title)
  
  # Tag de imagen | img src="image.png"
 ```html
@@ -46,5 +48,16 @@ El atributo height nos permite controlar el alto de la imagen por medio de pixel
 ```html
 <img src="images/css3.png" alt="Logo CSS3" width="100px" height="100px">
 ```
+
+### Atributo alt | Atributo title
+Nos permite dejar un texto en lugar de una imagen, si el link de la imagen se corrompe
+```html
+<img src"https://html5" alt="Logo HTML5"/>
+```
+Nos permite dejar un texto o informacion al pasar el cursor por una imagen sea que el link se corrompa o no a diferencia del atributo alt
+```html
+<img src"https://html5" title="Logo HTML5"/>
+```
+
 
 
