@@ -30,7 +30,21 @@ En esta leccion se veran los tags o etiquetas basicas de html.
 ```html
 <br/>
 ```
+***Preformatted***
+- [Prefotmatted]()
+```html
+<pre></pre>
+```
 
+***Atributos***
+- [title]()
+```html
+<p title="informacion extra">informativo</p>
+```
+- [style="color:;"]()
+```html
+<p style="colo:blue;">El texto toma el color blue</p>
+```
 
 
 
