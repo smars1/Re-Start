@@ -57,7 +57,9 @@ Nos permite dejar un texto en lugar de una imagen, si el link de la imagen se co
 Nos permite dejar un texto o informacion al pasar el cursor por una imagen sea que el link se corrompa o no a diferencia del atributo alt
 ```html
 <img src"https://html5" title="Logo HTML5"/>
+<p title"nuevo parrafo">soy texto<p/>
 ```
+title los podemos agregar tambien a otros tag como los de parrafo o cualquier otro elemento html para agregar informacion adicional
 
 
 
