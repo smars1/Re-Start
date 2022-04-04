@@ -56,6 +56,6 @@ nos permite crear una horizontal rule para separar nuestros elementos html
 ```html
 <br/>
 ```
-permite sar un salto de linea de texto
+permite usar un salto de linea de texto
 
 
