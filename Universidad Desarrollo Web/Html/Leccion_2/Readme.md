@@ -95,7 +95,7 @@ de la imagen, incluso funciona en otros elementos html
 <a href="https://globalmentoring.com.mx/imagenes/html5.png" title="page html5">Ir a html5</a>
 <!--tag de hypertext anchor, usamos un title -->
 ```
-# Atributo style:color:
+# Atributo style:color;
 El atributo style nos permite dar color a la fuente de nuestros textos.
 ```html
 <a href="https://globalmentoring.com.mx/imagenes/html5.png" style="color:darkorange" title="page html5">Ir a html5</a>
