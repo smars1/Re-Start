@@ -51,5 +51,7 @@ Debajo se prensenta un ejemplo en un tag pre.
 
 ```html
 <pre style:"color:green; font-size:50 px; font-family:'Franklin Gothic Medium', Arial Narrow, Arial, sans-serif;">
+  Seleccionamos color verde para la fuente, tamaño de fuente de 50 px y el tipo de fuente que tendremos
+</pre>
 ```
 cerramos el style con comillas dobles (" "), por lo que selccionamos la fuente de preferencia con comillas singulares ('Franklin Gothic Medium'). 
