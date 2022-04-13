@@ -4,6 +4,7 @@
 
 **Table of contents**
 
+- [Temario](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html#temario)
 
 - [Extenciones de VSCode para html](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html#extenciones-de-vscode-para-html)
 
@@ -13,7 +14,13 @@
 
 - [Descripcion de los codigos](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html#descripcion-de-los-codigos)
 
-- [Temario](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html#temario)
+
+
+
+# Temario
+- *Leccion 1: Introduccion a HTML*
+- *Leccion 2: Elementos basicos de HTML*
+
 
 # Extenciones de VSCode para html 
 
@@ -86,9 +93,5 @@ for example:
 
 - index.html:
 Primera pagina html, usamos tag basicos y un charset (juego de caracteres) con el fin de que nuestra pagina sorporte los acentos
-
-# Temario
-- *Leccion 1: Introduccion a HTML*
-- *Leccion 2: Elementos basicos de HTML*
 
 
