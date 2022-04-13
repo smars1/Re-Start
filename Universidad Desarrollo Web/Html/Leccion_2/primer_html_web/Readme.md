@@ -3,15 +3,15 @@
 
 ***En este proyecto utlizamos todo lo aprendido en la leccion 2, agregamos atributos como:***
 
-- [style="bakcground-color: green;"]()
+- [style="bakcground-color: green;"](https://github.com/smars1/Re-Start/tree/main/Universidad%20Desarrollo%20Web/Html/Leccion_2/primer_html_web#ejemplo-stylebackground-color)
 
 Este nos deja elegir un color de fondo ya sea por color codigo RGB 
 
-- style="font-size: 50 px ;"
+- [style="font-size: 50 px ;"](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_2/primer_html_web#ejemplo-stylefont-size)
 
 font-size nos deja seleccionar el tamaño de la fuente
 
-- style="font-family: 'arial', arial narrow"
+- [style="font-family: 'arial', arial narrow"](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_2/primer_html_web#ejemplo-stylefont-family)
 
 font-family nos deja seleccionar el tipo de fuente que se utlizara, podemos selecionar varios y poner el principal dentro de comillas, si no se encuentra el seleccionado
 con las comillas pasa al otro y a si sucesivamente
