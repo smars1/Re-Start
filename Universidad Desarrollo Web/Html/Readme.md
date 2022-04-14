@@ -19,7 +19,13 @@
 
 # Temario
 - *Leccion 1: Introduccion a HTML*
+    
+    Hola mundo en html
+
 - *Leccion 2: Elementos basicos de HTML*
+
+    creamos nuestros primeros html web, meta de carecteres,  redireccionamiento de links e imagenes.
+    Formato de fuente, background color, manejo de imagenes, formato de textos y semantica
 
 
 # Extenciones de VSCode para html 
