@@ -24,8 +24,10 @@
 
 - *Leccion 2: Elementos basicos de HTML*
 
-    creamos nuestros primeros html web, meta de carecteres,  redireccionamiento de links e imagenes.
-    Formato de fuente, background color, manejo de imagenes, formato de textos y semantica
+    Creamos nuestros primeros html web, meta de carecteres,  redireccionamiento de links e imagenes.
+    Formato de fuente, background color, manejo de imagenes, formato de textos y semantica en HTML.
+    
+- *Leccion 3: Introduccion a HTML con CSS* 
 
 
 # Extenciones de VSCode para html 
