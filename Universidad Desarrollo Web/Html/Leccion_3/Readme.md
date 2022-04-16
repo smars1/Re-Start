@@ -10,12 +10,14 @@
 - [Colores por RGB + border](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#colores-por-rgb--border--transparencia)
 - [colores por HSL + border](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#colores-por-htl--border--transparencia)
 - [Colores por hexadecimal](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#colores-por-codigo-hex)
-- codigo de colores hsl Hue satiration lighning   hsl(120,83%,47%), htmlcolorcodes.com 
+
 
 
 # Manejo de colores con HTML con CSS
 
 Actualmente los navegadores modernos aceptan hasta 140 colores, estos los podemos implentar en HTML o CSS por nombre, codigo HEX o valores RGB00.00.
+
+Podemos encontrar informacion sobre las paletas de colores en los diferentes formatos de seleccion en [htmlcolorcodes.com ](https://htmlcolorcodes.com/es/tutoriales/html-color-del-texto/)
 
 ```htmlt
 <style="color: ">
