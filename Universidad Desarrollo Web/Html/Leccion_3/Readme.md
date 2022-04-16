@@ -3,7 +3,7 @@
 
 # Temas 
 
--[Manejo de colores con CSS y HTML](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#manejo-de-colores-con-html-con-css)
+- [Manejo de colores con CSS y HTML](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#manejo-de-colores-con-html-con-css)
 - [style="border"](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#styleborder)
 - [Transparencia](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#transparencia)
 - [Colores por nombre + border](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#colores-por-nombre--border--transparencia)
