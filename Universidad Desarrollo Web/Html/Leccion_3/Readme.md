@@ -10,8 +10,9 @@
 - [Colores por RGB + border](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#colores-por-rgb--border--transparencia)
 - [colores por HSL + border](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#colores-por-htl--border--transparencia)
 - [Colores por hexadecimal](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#colores-por-codigo-hex)
-- [Introduciendose a CSS]()
-- 
+- [Introduciendose a CSS](https://github.com/smars1/Re-Start/blob/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#css-stylesheet-selectores)
+- [Selectores en CSS](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#selectores-en-css)
+- [CSS en HTML cascadas](https://github.com/smars1/Re-Start/edit/main/Universidad%20Desarrollo%20Web/Html/Leccion_3#css-en-html-cascadas)
 
 
 # Manejo de colores con HTML con CSS
@@ -147,7 +148,7 @@ body{
 
 # CSS en HTML cascadas
 
-***La funcion de las cascadas es poder adoptar todos los atributos de una clase padre a una clase hijo o bien una de una clase a una subclase. Podemos añadir el Path de nuestro sylesheet.css a un archivo.html al Head de este para poder declarar los estilos seleccionaros en la stylesheet.css en nuestro html, tambien podemos sobre escribir las stylesheet si abrimos un tag stile debajo del tag de link stylesheet, o bien podemos hacerlo desde el body si solo queremos cambiar un tag en especifico. se muestra un codigo ejemplo:***
+***EL sistema de cascada nos permite poder adoptar todos los atributos de una clase padre a una clase hijo o bien una de una clase a una subclase. Podemos añadir el Path de nuestro sylesheet.css a un archivo.html al Head de este para poder declarar los estilos seleccionaros en la stylesheet.css en nuestro html, tambien podemos sobre escribir las stylesheet si abrimos un tag stile debajo del tag de link stylesheet, o bien podemos hacerlo desde el body si solo queremos cambiar un tag en especifico. se muestra un codigo ejemplo:***
 ```html
 <!DOCTYPE html>
 <html lang="en">
