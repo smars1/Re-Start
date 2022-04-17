@@ -1,0 +1,30 @@
+/* aqui colocaremos los selectores */
+
+h1{
+    color: #298A08;
+    background-color: darkorange;
+    padding: 20px 30px;
+    margin: auto 50px ;
+    border: 20px solid #298A08 ;
+    border-radius: 30px;
+    text-align: center;
+}
+p{
+    color: #01A9DB;
+    background-color: #424242;
+    padding: 15px;
+    border: 20px solid;
+    /*border-radius: 10px 20px;*/
+    margin: auto 50px;
+    text-align: center;
+}
+code{
+    color: #424242;
+    background-color: #01A9DB;
+    border: 20px solid;
+
+}
+
+body{
+    background-color: #FE9A2E;
+}
