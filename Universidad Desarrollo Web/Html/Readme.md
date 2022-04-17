@@ -28,10 +28,10 @@
     Formato de fuente, background color, manejo de imagenes, formato de textos y semantica en HTML.
     
 - *Leccion 3: Introduccion a HTML con CSS* 
-    Manejo de colores con CSS y HTML
-    Introduciendose a CSS
-    Selectores en CSS
-    CSS en HTML cascadas
+    - Manejo de colores con CSS y HTML  
+    - Introduciendose a CSS
+    - Selectores en CSS
+    - CSS en HTML cascadas
 
 # Extenciones de VSCode para html 
 
