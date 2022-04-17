@@ -145,6 +145,19 @@ body{
     background-color: #FE9A2E;
 }
 ```
+***Debemos agregar el link de referencia de esta hoja de estilos a nuestro html de la siguiente manera:***
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de estilos</title>
+    <!-- ponemos el link con el path de nuestra hoja de estilos la cual sera la clase padre-->
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <!-- si queremos rescribir los estilos los deberemos definir del tag de link o dentro de body de forma mas especifica-->
+</head>
+```
+
 
 # CSS en HTML cascadas
 
