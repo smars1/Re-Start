@@ -67,9 +67,16 @@ No se necesita personal especializado
 ![image](https://user-images.githubusercontent.com/42829215/163846919-73b45b48-1d5d-4fad-b206-a7dad7b5f482.png)
 
 - [Iaas]()
+
+Infrastructura como servicio
+EC2 
 - [PaaS]()
+
+Plataforma como servicio .
+Entorno donde podemos hacer configuraciones para usar una aplicacion.
 - [SaaS]()
 
+Software como servicio.
 
 # Infraestructura en las instalaciones y de AWS
 
