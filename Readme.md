@@ -8,16 +8,28 @@ Fundamentos cloud:
 - skill builder (Cursos gratuitos)
 - certification ( agendamos el examen no logeamo con la cuenta de amazon)
 
-# Ventajas de computo en la nube
+# Ventajas de la informatica en la nube
+***Al utilizar la nube, las empresas no necesitan invertir dinero en centros de datos ni en servidores. Solo pueden pagar por lo que utilizan y pagar solo cuando utilizan estos recursos (lo que también se conoce como pago por uso). Las empresas ahorran dinero en tecnología. Se pueden adaptar a nuevas aplicaciones con todo el espacio que necesiten en cuestión de minutos, en lugar de semanas o días. El mantenimiento se reduce para que la empresa pueda centrarse en sus objetivos principales.***
 
-- ventajas en computo en la nube
+### Ventajas en computo en la nube
+
+- Ventaja 1, Cambiar gastos de capital (CapEx) por gastos variables:
+No es necesario invertir en los centros de datos y servidores para saber como los utilizara. En su lugar, puede pagar solo cuando utiliza los recursos informaticos y pagar por la cantidad que se utilza.
+
+-  Ventaja 2, Obtener beneficios de las economias de escala masivas:
+***Mediante el uso de la informática en la nube, puede obtener un costo variable más bajo que el que tendría por su propia cuenta. Dado que el uso de cientos de miles de clientes se puede agregar en la nube, proveedores como AWS pueden lograr mayores economías de escala. Estas economías se traducen en precios más bajos de pago por uso.***
+
 
   - gastos de capital  capex
+***Los fondos que utiliza una empresa para adquirir actualizar y mantener activos fisicos, como propiedades, edificios industriales o equipos***
   - gastos variables
+***Un gasto que la persona asume el costo se puede alterar o evitar***
+  - Economias de escala
+
 
 ![image](https://user-images.githubusercontent.com/42829215/163820518-5003bd3f-33f2-4c1d-bac0-e083ab2a75cf.png)
 
-- Si tiene una empresa ¿como beficia 
+- Si tiene una empresa ¿como beficia?
 
 Rentable 
 Economico 
@@ -68,6 +80,7 @@ No se necesita personal especializado
 - Almacenamiento y base de datos
 
 # Que son los servicios WEB
+***Un servicio web es cualquier pieza de software que se expone en Internet o en redes privadas (intranet). Un servicio web utiliza un formato estandarizado para la solicitud y la respuesta de una interacción de interfaz de programación de aplicaciones (API). Por ejemplo, se pueden utilizar formatos como Lenguaje de marcado extensible (XML) o Notación de objetos JavaScript (JSON). No está vinculado a ningún sistema operativo (SO) o lenguaje de programación. Un servicio web se autodescribe a través de un archivo de definición de interfaz y es detectable***
 
 ### Instancias mas usadas para practioner
 
