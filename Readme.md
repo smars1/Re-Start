@@ -13,18 +13,18 @@ Fundamentos cloud:
 
 ### Ventajas en computo en la nube
 
-- Ventaja 1, Cambiar gastos de capital (CapEx) por gastos variables:
+- Ventaja 1, Cambiar gastos de [capital (CapEx)](https://github.com/smars1/Re-Start/edit/main#gastos-de-capital--capex) por [gastos variables](https://github.com/smars1/Re-Start/edit/main#gastos-variables):
 No es necesario invertir en los centros de datos y servidores para saber como los utilizara. En su lugar, puede pagar solo cuando utiliza los recursos informaticos y pagar por la cantidad que se utilza.
 
 -  Ventaja 2, Obtener beneficios de las economias de escala masivas:
 ***Mediante el uso de la informática en la nube, puede obtener un costo variable más bajo que el que tendría por su propia cuenta. Dado que el uso de cientos de miles de clientes se puede agregar en la nube, proveedores como AWS pueden lograr mayores economías de escala. Estas economías se traducen en precios más bajos de pago por uso.***
 
 
-  - gastos de capital  capex
-***Los fondos que utiliza una empresa para adquirir actualizar y mantener activos fisicos, como propiedades, edificios industriales o equipos***
-  - gastos variables
-***Un gasto que la persona asume el costo se puede alterar o evitar***
-  - Economias de escala
+ ### Gastos de capital  (capex):
+***Los fondos que utiliza una empresa para adquirir actualizar y mantener activos fisicos, como propiedades, edificios industriales o equipos.***
+ ### Gastos variables:
+***Un gasto que la persona asume el costo se puede alterar o evitar.***
+### Economias de escala:
 
 
 ![image](https://user-images.githubusercontent.com/42829215/163820518-5003bd3f-33f2-4c1d-bac0-e083ab2a75cf.png)
