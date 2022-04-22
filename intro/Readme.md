@@ -231,6 +231,10 @@ Gedit es un editor de texto GUI, este contiene botones de menu disponibles, pero
   - identidad de otros
   - Permisos predeterminados
   
+  
+  ![image](https://user-images.githubusercontent.com/42829215/164731087-7c0a7c05-ee78-42c2-91e5-85da5d48184e.png)
+
+  
 ## reprensentacion simbolica de los permisos 
   - comando chmod 
   [que es chmod](https://www.ionos.mx/digitalguide/servidores/know-how/asignacion-de-permisos-de-acceso-con-chmod/)
@@ -240,6 +244,14 @@ Gedit es un editor de texto GUI, este contiene botones de menu disponibles, pero
   - Limite los nombres de archivo de caracteres alfanumericos. 
   
   
+  # Hoy repaso
   
-  
- 
+ - Comando ls -l (se usa para ver los permisos)
+ - permisos predeterminados
+ - Comando chown 
+ - chmod 
+  ## modo simbolico
+   ![image](https://user-images.githubusercontent.com/42829215/164732549-fc2c06d0-422a-4df7-984f-dd8f22ef296c.png)
+  ## modo absoluto 
+   ![image](https://user-images.githubusercontent.com/42829215/164733155-882e3a2c-36b9-4f3e-9c51-d793ef58e4de.png)
+
