@@ -86,4 +86,5 @@ Se utilza para escribir programas pequeños con el fin de transformar datos, est
 ![image](https://user-images.githubusercontent.com/42829215/164765378-832d73ce-933b-4102-b999-d051c8e120e3.png)
 
 
-
+# Practica TRabajar con comandos
+https://labs.vocareum.com/main/main.php?m=clabide&mode=s&asnid=754665&stepid=754666&hideNavBar=1
