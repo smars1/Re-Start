@@ -6,7 +6,7 @@
 - [Linux book](https://didweb.gitbooks.io/comandos-linux/content/chapter1/procesos/ps.html)
 - [Comandos de ayuda](https://github.com/smars1/Re-Start/new/main/intro#comandos-de-ayuda)
 - [Comandos utiles]()
-- [Comandos de administracion de usuarios]()
+- [Comandos de administracion de usuarios](https://github.com/smars1/Re-Start/blob/main/intro/Comandos_linux.md#comandos-de-administracion-de-usuarios)
 - [Comandos de administracion de grupos]()
 - [permisos de usuario]()
 - [IAM]()
