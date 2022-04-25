@@ -1,11 +1,16 @@
 # Lista de Comandos de Linux
 
+[Nota: seguir desde aqui](https://awsrestart.vitalsource.com/reader/books/LXUSERSANDGROUPS310ES/pageid/7)
+
 - [Sintaxis de comandos Linux]()
 - [Comandos de ayuda](https://github.com/smars1/Re-Start/new/main/intro#comandos-de-ayuda)
 - [Comandos utiles]()
-
+- [Comandos de administracion de usuarios]()
+- [Comandos de administracion de grupos]()
+- [permisos de usuario]()
+- [IAM]()
 ## Sintaxis de comandos Linux
-La sintaxis de comandos Linux distingue de mayusculas y minisculas, la mayoria de los comandos Linux siguen las reglas de sintaxis segun el comando, la sintaxis incluye 
+ La sintaxis de comandos Linux distingue de mayusculas y minisculas, la mayoria de los comandos Linux siguen las reglas de sintaxis segun el comando, la sintaxis incluye 
 el comando en si, una opcion y un argumento.
 
 ![image](https://user-images.githubusercontent.com/42829215/165011695-4a056b5f-572b-425a-b197-36e7e6799016.png)
@@ -20,7 +25,7 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
 ## Comandos de ayuda
 
 - ### Comando man 
-  El comandon coman muestra la informacion de la documentacion de la pagina oficial del comando que se especifica como argumento, esta informacion incluye lo siguiente:
+  El comandon coman muestra la informacion de la documentacion de la pagina oficial del comando que se especifica como argumento, esta informacion incluye lo       siguiente:
   - Nombre: El nombre y una breve descripcion de la finalidad del comando.
   - Sinopsis: La sintaxis del comando. 
   - Descripcion: Descripcion detallada del uso y las funciones del comando. 
@@ -81,7 +86,7 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
   clear
   ```
 - ### Comando echo
-  El comando echo coloca el texto especificado en la pantalla, en los scripts, resulta muy util proporcionar informacion a los usuarios a medida que se ejecuta el script.
+  El comando echo coloca el texto especificado en la pantalla, en los scripts, resulta muy util proporcionar informacion a los usuarios a medida que se ejecuta el       script.
   Dirige el texto a la salida estandar o en scripts para proporcionar descripciones de los resultados mostrados.
   ```
   echo ' hola mundo!'
@@ -146,15 +151,24 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
   Reduce la necesidad de ajustar la salida en función del dispositivo que se utilice.
   
   
-  ### Error estandar: Comando stderr
+ - ### Error estandar: Comando stderr
   
-  Error estandar (stderr)
-  El error estandar es cuando un proceso puede escribir mensajes de error.
-  El error estándar (stderr) se utiliza para imprimir los mensajes de error en la pantalla de salida o en el terminal de la ventana.
-  ```
-   find / -name "*" -print 2> / dev/null 
-  ```
-    - Error estandar: 2
-    2 es el valor que se le da al error estandar.
+   Error estandar (stderr)
+   El error estandar es cuando un proceso puede escribir mensajes de error.
+   El error estándar (stderr) se utiliza para imprimir los mensajes de error en la pantalla de salida o en el terminal de la ventana.
+   ```
+    find / -name "*" -print 2> / dev/null 
+   ```
+     - Error estandar: 2
+     2 es el valor que se le da al error estandar.
   
-  Puede descartar cualquier error que genere el comando find para mantener la CLI ordenada.
+   Puede descartar cualquier error que genere el comando find para mantener la CLI ordenada.
+  
+## Comandos de administracion de usuarios
+ - ### Comando useradd
+   Crea la cuenta de usuario y un directorio principal en /home, tambien define los valores predeterminados de la cuenta.
+  
+   ```
+    useradd UserName
+   ```
+  
