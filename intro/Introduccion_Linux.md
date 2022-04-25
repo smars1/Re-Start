@@ -5,7 +5,7 @@ y dispositivos embebidos.***
 ## Aprendizajes
 - [Defnir linux](https://github.com/smars1/Re-Start/blob/main/intro/Introduccion_Linux.md#definir-linux)
 - [Describir las características y los componentes principales del sistema operativo (SO) Linux](https://github.com/smars1/Re-Start/blob/main/intro/Introduccion_Linux.md#el-sistema-operativo-de-linux)
-- [Interfaces de usuario](https://github.com/smars1/Re-Start/edit/main/intro/Introduccion_Linux.md#interfaz-de-usuario-de-lunux)
+- [Interfaces de usuario](https://github.com/smars1/Re-Start/blob/main/intro/Introduccion_Linux.md#interfaz-de-usuario-de-lunux)                      
 - [Utilizar la documentación integrada de Linux](https://github.com/smars1/Re-Start/edit/main/intro/Introduccion_Linux.md#documentacion-de-linux)
 - [Enumerar las diferentes distribuciones de Linux](https://github.com/smars1/Re-Start/edit/main/intro/Introduccion_Linux.md#distruciones-de-linux)
                                               
