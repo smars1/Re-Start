@@ -145,3 +145,16 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
   Simplifica el uso de Linux en diferentes dispositivos y en diferentes programas.
   Reduce la necesidad de ajustar la salida en función del dispositivo que se utilice.
   
+  
+  ### Error estandar: Comando stderr
+  
+  Error estandar (stderr)
+  El error estandar es cuando un proceso puede escribir mensajes de error.
+  El error estándar (stderr) se utiliza para imprimir los mensajes de error en la pantalla de salida o en el terminal de la ventana.
+  ```
+   find / -name "*" -print 2> / dev/null 
+  ```
+    - Error estandar: 2
+    2 es el valor que se le da al error estandar.
+  
+  Puede descartar cualquier error que genere el comando find para mantener la CLI ordenada.
