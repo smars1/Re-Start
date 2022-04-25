@@ -3,6 +3,7 @@
 [Nota: seguir desde aqui](https://awsrestart.vitalsource.com/reader/books/LXUSERSANDGROUPS310ES/pageid/7)
 
 - [Sintaxis de comandos Linux]()
+- [Linux book](https://didweb.gitbooks.io/comandos-linux/content/chapter1/procesos/ps.html)
 - [Comandos de ayuda](https://github.com/smars1/Re-Start/new/main/intro#comandos-de-ayuda)
 - [Comandos utiles]()
 - [Comandos de administracion de usuarios]()
