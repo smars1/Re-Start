@@ -3,12 +3,11 @@
 y dispositivos embebidos.***
 
 ## Aprendizajes
-- [Defnir linux]()
-- [Describir las características y los componentes principales del sistema operativo (SO) Linux]()
-- [Interfaces de usuario]()
-- [Distinguir las diferentes interfaces de usuario de Linux]()
-- [Utilizar la documentación integrada de Linux]()
-- [Enumerar las diferentes distribuciones de Linux]()
+- [Defnir linux](https://github.com/smars1/Re-Start/edit/main/intro/Introduccion_Linux.md#aprendizajes)
+- [Describir las características y los componentes principales del sistema operativo (SO) Linux](https://github.com/smars1/Re-Start/edit/main/intro/Introduccion_Linux.md#componentes-de-linux)
+- [Interfaces de usuario](https://github.com/smars1/Re-Start/edit/main/intro/Introduccion_Linux.md#interfaz-de-usuario-de-lunux)
+- [Utilizar la documentación integrada de Linux](https://github.com/smars1/Re-Start/edit/main/intro/Introduccion_Linux.md#documentacion-de-linux)
+- [Enumerar las diferentes distribuciones de Linux](https://github.com/smars1/Re-Start/edit/main/intro/Introduccion_Linux.md#distruciones-de-linux)
 
 
 # Definir linux
@@ -47,6 +46,9 @@ Linux 2***
 - Debian
 - Ubuntu
 
+Una distribucion de linux es una version empaquetada de linux que un grupo de pernasonas o empresa desarrolla. Por lo 
+
+
 # Componentes de linux
 ***Los componentes principales de una distribución de Linux consisten en un kernel, daemons, aplicaciones, archivos
 de datos y archivos de configuración. Los revisará con más detalle en las siguientes diapositivas***
@@ -54,7 +56,14 @@ de datos y archivos de configuración. Los revisará con más detalle en las sig
 ![image](https://user-images.githubusercontent.com/42829215/164265043-5a8be772-94a6-4f04-8a7b-75ff4cee3395.png)
 
 - Kernel de linux
-  -  un programa informatico 
+  -  un programa informatico. 
+  -  Es un controlador de todo lo que hay en el sistema operativo
+    - Administra. 
+      - La programacion del tiempo del procesador. 
+      - La asignacion de memoria para el SO y las aplicaciones.
+      - El acceso dispositivos perifericos.(Tarjetas de sonido, Discos duro, tarjeta de red u otros.) 
+El kernel se refiere al componente principal del sistema operativo. Controla todo lo que ocurre en el SO, incluida la asignacion del tiempos del CPU, el alamacenamiento de memoria y hasta los programas en ejecucion, tambien administra los accesos a los despositivos perifericos.
+
 
 
 - Daemons
@@ -64,12 +73,23 @@ de datos y archivos de configuración. Los revisará con más detalle en las sig
   - los nombres de los procesos terminan, por lo general con la letra d 
   - Ejemplos:
     - Syslod
-    - sshd
-- aplicaciones
+     Cuando las aplicaciones del sistema o de usuario generan mensajes, el daemon syslogd captura los mensajes y los almacena en un archivo, que se denomina registro.
 
+    - sshd
+     El daemon sshd maneja las conexiones de Secure Shell (SSH) con la computadora. Este tipo de conexión utiliza cifrado para proteger la comunicación entre el cliente y el servidor.
+
+- aplicaciones
+Las aplicaciones son programas que ayudan al usuario a relaizar una tarea o actividad.
+  - Por ejemplo:
+    - Procesador de textos
+    - Navegador web
+    - Cliente de correo electronico 
+    - Reproductor multimedia
+  
 - Archivos de datos
   -  Contienen la informacion que utilizan los programas y pueden incluir distintos tipos de dato como, texto, audio, imagenes
 ![image](https://user-images.githubusercontent.com/42829215/164266365-f84b7164-a617-4029-ae73-69a3fc99c3af.png)
+Un archivo tiene un nombre que lo identifica de forma exclusiva. El formato de un nombre de archivo completo consta de undirectoryName opcional, elfileName real y una extensión opcional. Un punto precede la extensión.
 
 - Archivos de configuracion
   - Un archivo de configuración de Linux es un tipo especial de archivo que almacena la configuración inicial o los
@@ -78,20 +98,29 @@ de datos y archivos de configuración. Los revisará con más detalle en las sig
     de usuarios autorizados del sistema.
   - Extencion de nombre de aechivo
   - .cnf
-  - 
+  - .conf
+  - .cfg
+  - cf
+  - .ini
 
 # Interfaz de usuario de lunux
 
+Hay dos fomas de interactuar con el sistema linux, la interfaz CLI y la GUI, la CLI se refiere a la command line interface o interfaz linea de comandos mientras que la GUI se refiere a la graphical user interface o interfaz grafica de usuario.
+
 - CLI Linea de comandos
-  - consume menos recursose de hardware.
-  - Se puede autmatizar con scripts
+  - consume menos recursos de hardware.
+  - Se puede autmatizar con scripts.
   - Ofrece mas opciones.
+  - Solo acepta comandos de usario en forma de texto.
 - GUI Interfax Grafica de Usuario
-  - Es visual
+  - Es visual e intuitiva de navegar
+  - Es similar en linux, windows y macOS
+  - Presenta iconos y objetos visuales que se pueden seleccionar en funcion de linux.
 
 ## Shell de linux 
 ***Cuando utiliza la CLI, el shell que selecciona define la lista de comandos y funciones que pueden ejecutarse. Un shell interpreta el comando que escribe e invoca el componente del kernel adecuado que ejecuta el comando.
 Hay muchos tipos de shells que puede utilizar y cada distribución de Linux define los tipos que admite.***
+![image](https://user-images.githubusercontent.com/42829215/165002824-c26eb325-4831-4442-96c1-2c1288349cd0.png)
 
 
 # Documentacion de linux
