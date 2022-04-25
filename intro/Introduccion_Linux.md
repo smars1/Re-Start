@@ -8,7 +8,7 @@ y dispositivos embebidos.***
 - [Interfaces de usuario](https://github.com/smars1/Re-Start/edit/main/intro/Introduccion_Linux.md#interfaz-de-usuario-de-lunux)
 - [Utilizar la documentación integrada de Linux](https://github.com/smars1/Re-Start/edit/main/intro/Introduccion_Linux.md#documentacion-de-linux)
 - [Enumerar las diferentes distribuciones de Linux](https://github.com/smars1/Re-Start/edit/main/intro/Introduccion_Linux.md#distruciones-de-linux)
-
+                                              
 
 # Definir linux
 ***Las computadoras estan conformadas por hardware y software***
