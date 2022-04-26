@@ -227,7 +227,8 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
    - | redirige el resultado al segundo comando grep  que busca la palabra hello en la lista de archivos
    
    ## Comandos de administracion de grupos
+   La ubicacion de almacenamiento de grupo es el archivo ***/etc/group/***
   - ### Comando groudpad
-  
+    
    
    
