@@ -4,4 +4,4 @@
 
 [Shell bash](https://awsrestart.vitalsource.com/reader/books/LXBASHSHELL310ES/pageid/6)
 
-[Script]()
+[Script](https://awsrestart.instructure.com/courses/866/modules/items/385399)
