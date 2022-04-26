@@ -6,7 +6,8 @@
 - [Linux book](https://didweb.gitbooks.io/comandos-linux/content/chapter1/procesos/ps.html)
 - [Comandos de ayuda](https://github.com/smars1/Re-Start/new/main/intro#comandos-de-ayuda)
 - [Comandos utiles]()
-- [Comandos de administracion de usuarios](https://github.com/smars1/Re-Start/blob/main/intro/Comandos_linux.md#comandos-de-administracion-de-usuarios)
+- [Comandos de administracion de usuarios](https://github.com/smars1/Re-Start/blob/main/intro/Comandos_linux.md#comandosde-administracion-de-usuarios)
+- [Coamandos de administracion de grupos]()
 - [Comandos de administracion de grupos]()
 - [permisos de usuario]()
 - [IAM]()
@@ -225,6 +226,8 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
    - ls enumera todos los archivos de la carpeta /etc/passwd.
    - | redirige el resultado al segundo comando grep  que busca la palabra hello en la lista de archivos
    
-   
+   ## Comandos de administracion de grupos
+  - ### Comando groudpad
+  
    
    
