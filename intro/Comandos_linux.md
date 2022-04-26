@@ -168,8 +168,63 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
 ## Comandos de administracion de usuarios
  - ### Comando useradd
    Crea la cuenta de usuario y un directorio principal en /home, tambien define los valores predeterminados de la cuenta.
-  
+   
    ```
     useradd UserName
    ```
-  
+   
+    #### opciones
+    Las opciones permiten personalizar la cuenta del usuario al momento de su creacion. El campo de comentarios se utilza a menudo para colocar el nombre completo del     usuario
+    - -c Comentario 
+    ```
+    useradd -c "Nuevo empleado" UserName
+    ````
+    - -e Vencimiento de la cuenta
+    ```
+    useradd -e 2025-01-01 UserName
+    ```
+    -d Ruta de acceso al directorio principal
+    ```
+    useradd -d /users/UserName UserName
+    ```
+ - ### Comando usermod
+   Este comando se utilza para modificar o cambiar una cuenta de usuario existente, en parte o en su totalidad.
+   
+   
+ - ### Comando userdel
+   Utilice el comando userdel para eliminar una cuenta de usuario, utilice la opcion -r para borrar tambien el directorio principal del usuario.
+   
+   ```
+   userdel UserName
+   ```
+   Para borrar el directorio principal del usuario.
+   ```
+   userdel -r UserName
+   ``` 
+ - ### Comando passwd
+   El comando passwd se utilza para establecer las contraseñas de usuario. Los usuarios pueden restablecer sus propias contraseñas, mientras que el usuario raiz puede    restablecer cualquier contraseña de usuario.
+    - Debe ingresar la contraseña dos veces.
+    - No se muestra ningun caracter en la pantalla cuando se escribe la contraseña.
+     
+   ```
+   passwd UserName
+   ```
+   
+   ## Comando para buscar texto
+ - ### Comando grep
+   grep es una comando de linux para buscar texto. se puede utilzar de la siguiente manera para buscar la palabra hello en los archivos que se encuentran en              /etc/passwd: 
+     
+   ```
+   grep hello /etc/passwd
+   ```
+     
+   Tambien se puede usar con la pleca ( | ) que redirige la salida del comando a otro comando.
+   ```
+   ls /etc/passwd | grep hello 
+   ```
+   - ls enumera todos los archivos de la carpeta /etc/passwd.
+   - | redirige el resultado al segundo comando grep  que busca la palabra hello en la lista de archivos
+   
+   
+   
+   
