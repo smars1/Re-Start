@@ -97,3 +97,17 @@ poder salir temprano e pasear en bote con algunos amigos.
   # Lab 140 - Lab Desafio ejercicio bash
  
 Laboratorio de desafíos 1: Ejercicio de scripting de Bash
+  
+  ```sh
+  #!/bin/bash
+  
+  x=0
+  echo "Ingrese un nombre"
+  read name
+  
+  for x in {0..25}
+  do  
+      touch "$name$X.sh"
+      echo "carpeta $name$x.sh creada"
+  done
+  ```
