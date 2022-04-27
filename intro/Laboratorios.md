@@ -21,11 +21,11 @@ En este laboratorio, realizará lo siguiente:
   
   ## Uso del administrador de paquetes YUM 
   Sintaxis:
-  ```
+  ```sh
   yum [options] [command] [list of package names]
   ```
   Ejemplo:
-  ```
+  ```sh
   yum -y install <package name>
   ```
   
