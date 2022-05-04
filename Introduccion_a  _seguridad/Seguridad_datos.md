@@ -49,3 +49,15 @@ LA criptografia es una diciplina que incorpora un principia de tecnicas de cifra
   - ##  Los permisos definen quién puede acceder a un recurso y cómo hacerlo. Implemente permisos mediante una lista de control de acceso (ACL) o un enfoque basado en roles.
 
  
+# Criptografia 
+
+La criptografía es la disciplina que se encarga de que el intercambio de información y de datos se produzca de forma segura. Se centra en el desarrollo de sistemas basados en algoritmos que aumentan su complejidad a medida que la tecnología avanza.
+            
+        
+    
+                
+    
+        
+            
+                
+                    
