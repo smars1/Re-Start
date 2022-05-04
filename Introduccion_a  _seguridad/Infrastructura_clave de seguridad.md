@@ -1,25 +1,34 @@
-# Infrastructura de clase publica
+# Infrastructura de clave publica
 [link](https://awsrestart.vitalsource.com/reader/books/SECURITYARCHITECTURE310ES/pageid/0)
 
 
-la infrastructura de clave publica (PKI) es un conjunto de tecnologias que se utilizan aplicar principios de criptografica, nos ayuda a poder saber si alguna persona esta 
-manipulando nuestros datos.
+la infrastructura de clave publica (PKI) es un conjunto de tecnologias que se utilizan aplicar principios de criptografica, nos ayuda a poder saber si alguna persona esta manipulando nuestros datos.
+- Esta se basa en la implementacion practica de claves. 
+- permiten confirencialidad, integridad, no rechazo y auntenticidad, ademas de administracion de confianza y las relaciones
+
+La implementacion de la PKI es un proceso estrategico.  Este proceso tiene como objetivo reducir los riesgos relacionados con la seguridad a nivel global. La PKI se puede ampliar y se la puede utilizar con diversos fines.
 
 
 Esta se compone principalmente por :
 
 ![image](https://user-images.githubusercontent.com/42829215/166702539-a5a92242-2364-4912-93fc-4a1325934c52.png)
 
-CA : emite certificados a las entidades, tambien administra las relaciones de confianza.
-- Nomvre de la CA
-- Tipo CA
-- Integracion de la CA
-- Especificaciones clave
-- propiedades de la base de datos
+- CA : emite certificados a las entidades, tambien administra las relaciones de confianza.
+  - Nomvre de la CA
+  - Tipo CA
+  - Integracion de la CA
+  - Especificaciones clave
+  - propiedades de la base de datos
+- Certificados
+- Listas de revocacion 
+- Entidades de registro RA
+- Entidades
+- Plantillas de certificados
 
   ## CA raiz y CA subordinados
 CA raiz:
--Primera en la jerarquia 
+- Primera en la jerarquia 
+ 
 CA subordinados:
 - Se la conoce como autoridad de registro 
 
