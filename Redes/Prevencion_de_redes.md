@@ -1,14 +1,18 @@
 # Prevencion: descubrimiento de redes.
 [Link de prevencion de redes](https://awsrestart.vitalsource.com/reader/books/NETWORKHARDENING310ES/pageid/18)
 
+
 Dentro del ciclo de vida de la seguridad esta la prevencion
 - Descubrir redes
-- Endurecimiento de l sistema
+- Endurecimiento del sistema
 - Arquitectura de seguridad
 
 ## revision de redes
 - solo las personas autizadas deben tener acceso a estas redes.
-- A medida de que aumenta la disponibilidad aumenta la disponibilidad de confidencialidad e integridad.'
+- A medida de que aumenta la disponibilidad aumenta la disponibilidad de confidencialidad e integridad.
+
+![image](https://user-images.githubusercontent.com/42829215/166724366-50567c18-ab3c-46d7-9f9f-8466ffb815d5.png)
+
 
 ## Vulnerabilidad de red
 Dentro de estas vulnera tenemos varios dispositivos de red ya sea para disminuirlas vulnerablidedes de red o vulnerarlas.
