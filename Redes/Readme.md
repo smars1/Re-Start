@@ -33,11 +33,13 @@
   
  - ### Enrutador
   
-  Conecta varios conmutadores en una red.  La figura nos muestra como el enrutador enlaza los conmutadores #1 y #2 a una misma red, siendo que cada conmutador tra un conjunto o grupo de dispositivos  consigo, esto puede observarse en la figura.
+  Conecta varios conmutadores en una red.  La figura nos muestra como el enrutador enlaza los conmutadores #1 y #2 a una misma red, siendo que cada conmutador trae un conjunto o grupo de dispositivos  consigo, esto puede observarse en la figura.
 
 ## Cliente
-  Un cliente es un dispositivos 
-  se conecta al servidor mediante una red. 
+  Un cliente es un dispositivos de hardware informatico que accede a los datos o servicios admninistrados por otro dispositivo de hardware de computadora al que se le denomina servidor. EL cliente se conecta al servidor mediante una red.
+  
+  Un cliente tambien puede hacer referencia al software del dispositivo de acceso. Es decir que,  el cliente no necesariamente tiene que ser un dispositivo de hardware (fisico) por ejemplo, un navegador web es un cliente para acceder al contenido desde un servidor web.
+
 
 ## Servidor
 
@@ -48,34 +50,120 @@
     - Servidor de correo electronico
     - Servidor de impresion
 
-- ### Tarjeta de interfaz de red (NIC)
+## Tarjeta de interfaz de red (NIC)
  
-  Esta conecta una computadora a una red informatica. a veces tambien se denomina adapatador de red.
-  Cada NIC tiene su direccion MAC.
-  
-- ### Cable de red 
+  Esta conecta una computadora a una red informatica, a veces tambien se denomina adapatador de red. Cada NIC tiene su propia direccion de control de acceso a medios (MAC). La direccion mac es un identificador unico fisico (de hardware). Esta direccion la asigna el fabricante y se utiliza para identificar al remintente y al receptor de los datos.
+ 
+ ![image](https://user-images.githubusercontent.com/42829215/167287958-091e628d-80fd-44eb-9591-d8978ac41ff5.png)
 
-  la mayoria de los nodos
-    - Cable coaxial
-    - Par trenzado
-    - Fibra optica
+  
+## Cable de red 
+
+ la mayoria de los nodos
+ - ### Cable coaxial
+ 
+ ![image](https://user-images.githubusercontent.com/42829215/167288095-5792c487-0bf5-424a-b110-7a4b27631680.png)
+
+ 
+ Actualmente el uso mas comun que se le da al cable coaxial es el de conectar un modem o televisor a un proveedor de servicios de internet (ISP) o tambien conectar TV a decodificadores de cable.
+ 
+ 
+ 
+ - ### Par trenzado
+
+El cable de red de par trenzado es el cable de computadora, telefono y red mas comun. Habitualmente este cable se conoce mas comunmente como cable Ethernet y se compone por pares codificados de colores de cables de cobre aislados que estan agrupados en la misma camisa.
+
+Este cable esta disponible en dos tipos:
+- Blindado (STP)
+- Sin blindar (UTP)
+
+![image](https://user-images.githubusercontent.com/42829215/167288375-4b1dea72-f011-4b50-a362-66971e4443cc.png)
+
+ - ### Fibra optica
+Un cable de fibra optica transmite luz en lugar de electricidad. por la tanto es una buena opcion, para su uso en areas que tienen altos niveles de interferencia eletromagnetica (EMI) y para transmisiones a largas distancia. Un solo cable de cobre no puede transportar datos a mas de unos pocos cientos de metros, pero una sola pieza de cable de fibra optica puede transmitir datos a distancias de varios kilometros.
+
+El cable de fibra optica se compone por cuatro elementos:
+- Fibra de vidrio (Es el nucleo)
+- Revestimiento (La parte que hace que la luz se refleje en la fibra)
+- Material de amortiguacion (Para resistencia)
+- Camisa aislante
+
+![image](https://user-images.githubusercontent.com/42829215/167288750-d10abffc-c0c7-40f8-9252-5911c7d519d2.png)
+
     
-- ### Concentrador y conmutador
+## Concentrador y conmutador
+  un concentrador o conmutador son disposistivos que conectan todos los nodos de una red entre si. Todos los dispositivos cableandos de la red utilizan un adapatador de red, o NIC, para conectarse directamente a un puerto del concentrador o conmutador a traves de un solo cable.
 
-  Es un disposistivo que conecta todos los nodos de una red entre si.
+![image](https://user-images.githubusercontent.com/42829215/167290353-cd19f1ae-b8c0-4b34-bdcb-7d0ef0940408.png)
 
-- ### Enrutador
+- Concentrador:
+ - Dispositivo que transmite los datos que se reciben en un puerto a todos los demas puertos del concentrador.
+ - Si un nodo envia datos todos los demas los reciben, pero solo el destinatario previsto escucha.
+ 
+- Conmutador: 
+ - Dispositivo que transmite los datos solo al dispositivo receptor. Realiza un enlace directo mediante el uso de direcciones MAC entre el dispositivo de transmision y el dispositivo receptor. 
+ - El conmutador mejora el redimiento por que no utiliza conexiones de bandan ancha en transmisiones inncesarias.
 
-  es un dispositivo de red que conecta varios segmentos de una red a una sola red.
+
+## Enrutador
+
+  Un enrutador es un dispositivo de red que conecta varios segmentos de red en una unica red. El enrutador puede conectar varios conmutadores y sus respectivas redes para formar una red mas gradne (Es como si el enrutador actuara comon un conmutador para conmutadores entre redes)
   
-# Tipos de redes informaticas
+En el siguiente diagrama se muestran 2 redes conmutadas (que tambien se denominan subredes), el departamento A y el departamento B, las cuales estan interconectadas a traves de un enrutador.   
   
-  Desde el punto de vista del alcance geografico, dos de los tipos mas comunes de redes informaticas son las de area local (LAN) y las redes de area amplia (WAN).
+  ![image](https://user-images.githubusercontent.com/42829215/167290554-f7d97e30-8142-420e-b28a-eabfce36b3a3.png)
   
-  - Red de area loca (LAN)
-  - Red de area amplia (WAN)
+## Aprendizajes clave
+- Una red informatica es una coleccion de dispositivos informaticos que estan conectados logicamente para comunicarse y compartir recursos
+- Los componentes principales de una red incluyen:
+ - Dispositivos de cliente 
+ - Servidores
+ - Adaptadores de red (NIC) y cables
+ - Concentradores y conmutadores 
+ - Enrutadores 
+
+## Preguntas
+- ¿Qué dispositivo de red debe utilizar para conectar varias redes?
+
+  - El enrutador ya que este conetecta o enlaza a los conmutadores junto con sus redes en una misma red.
+
+- ¿Qué dispositivo establece un enlace directo (mediante direcciones MAC) entre el dispositivo de transmisión y el dispositivo receptor?
+
+  - El conmutador.
+
+- ¿Qué tipo de cable transmite luz en lugar de electricidad?
   
-- ## Modelos de administracion de redes 
+  - El cable de fibra optica transmite luz en lugar de electricidad.
+ 
+# Conceptos de redes 
+ Aprenderas los siguientes conceptos en la siguiente leccion:
+- Distinguir entre diferentes tipos de redes.
+- Describir modelos de administracion de redes comunes y topoligias de red.
+- Explicar el proposito del modelo de comunicacion del modelo de comunicacion de interconexion de sistemas abiertos. (OSI - Open System Interconnection) 
+- Enumerar los diferentes tipos de protocolos de red.  
+ 
+## Tipos de redes informaticas
+Desde el punto de vista del alcance geografico, dos de los tipos mas comunes de redes informaticas son las de area local (LAN) y las redes de area amplia (WAN).
+- ### Red de area loca (LAN)
+
+![image](https://user-images.githubusercontent.com/42829215/167291550-e0f46052-bda0-4990-a654-38099fd48ac0.png)
+
+  - Una LAN conecta dispositvos en un area geografica limitada, como un piso, un edificio o un campus.
+  - Las LAN suelen utilizar el estandar Ethernet para conectar dispositivos y, por lo general, tienen una alta velocidad de transferencia de datos.
+  - La tecnologia inalambrica tambien se usa comunmente para una LAN.
+ 
+- ### Red de area amplia (WAN)
+  
+![image](https://user-images.githubusercontent.com/42829215/167291816-87623990-91d1-48c1-805d-78da878375e7.png)
+  
+  - Una WAN conecta varios dispositivos en un area geograficamente grande, como varias ciudades o paises.
+  - Las WAN se utlizan para conectar las LAN. Las WAN utilzan tecnologias como fibra optica y satelites para transmitir datos.
+  - Se considera que la internet es la WAN mas grande.
+  
+ ![image](https://user-images.githubusercontent.com/42829215/167291884-52e003ff-f0a3-4ebe-9483-5b8af52de668.png)
+
+ 
+## Modelos de administracion de redes 
   Un modelo de administracion de red es una representacion de como administran los datos y como se alojan de las aplicaciones en una web.
   
   - ### Modelo cliente-servidor
