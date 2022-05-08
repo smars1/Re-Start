@@ -4,7 +4,7 @@
 
 # Que es una red informatica?
 
-- Una red informatica es una coleccion de que estan conectados logicamente para comunicarse y compartir recursos.
+- Una red informatica es una coleccion de dispsositivos que estan conectados logicamente para comunicarse y compartir recursos.
 - Un nodo se refiere a cualquier dispositivo de una red. Los ejemplos de nodos pueden ser servidores, conmutadores, modems o incluso impresoras.
 - Un dispositivo host es un nodo que tiene una funcio unica: otros dispositivos se conectan a los nodos para que puedan acceder a los datos u otros servicios. Un servidor es un ejemplo de host, por que un servidor puede proporcionar acceso a los datos. ejecutar una aplicacion o proporcionar un servicio.
 
@@ -15,31 +15,31 @@
 ![image](https://user-images.githubusercontent.com/42829215/165602092-b5c212de-23c7-4a32-a979-4ad1e27b5144.png)
 
 
-- Computadora A
+ - ### Computadora A
 
   Es un nodo tipico de una red, en la red una computadora puede ser un cliete o un servidor. 
   
-- Tarjeta interfaz de red
+ - ### Tarjeta interfaz de red
 
   Una tarjeta de interfaz de red (NIC) conecta una computadora a un cable de red.
   
-- cable de red
+ - ### cable de red
 
-  Conecta los nodos de una red.
+  Conecta los nodos de una red. 
   
-- Conmutador
+ - ### Conmutador
 
-  Conecta varios dispositivos a una red.
+  Conecta varios dispositivos a una red.  Si obeservamos bien la figura podemos ver como el conmutador #1 conecta la computadora A y Computadora B a una red. 
   
-- Enrutador
+ - ### Enrutador
   
-  Conecta varios conmutadores en una red.  
+  Conecta varios conmutadores en una red.  La figura nos muestra como el enrutador enlaza los conmutadores #1 y #2 a una misma red, siendo que cada conmutador tra un conjunto o grupo de dispositivos  consigo, esto puede observarse en la figura.
 
-- ### Cliente
-  
-  se conecta al servidor mediante una red.  
+## Cliente
+  Un cliente es un dispositivos 
+  se conecta al servidor mediante una red. 
 
-- ### Servidor
+## Servidor
 
   Un servidor proporciona una solicitud de una computadora cliente a traves de una red.
     - Servidor web
