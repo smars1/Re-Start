@@ -46,6 +46,9 @@ AWS Config le permite simplificar la auditoría de la conformidad, los análisis
 
 ![image](https://user-images.githubusercontent.com/42829215/167659949-8c2ee2d7-1510-474f-b273-054087611a1e.png)
 
+## Reglas AWS Config
+Podemos definir reglas con una configuracion deseada dpara los recursos
+
 
 # Coclusiones clave
 
