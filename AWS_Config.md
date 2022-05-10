@@ -1,6 +1,7 @@
 # AWS Config
 [Link](https://awsrestart.vitalsource.com/reader/books/AWSCONFIG310ES/pageid/0)
 [Link pagna AWS DOC](https://docs.aws.amazon.com/es_es/config/latest/developerguide/config-concepts.html#aws-config-rules)
+[Administracion de aplicaciones AWS](https://docs.aws.amazon.com/es_es/config/latest/developerguide/config-concepts.html#aws-config-rules)
 
 - Recursos 
 - Inventarios
