@@ -1,6 +1,9 @@
 # Introduccion a Python
 [link](https://awsrestart.vitalsource.com/reader/books/PROGPYTHONINTRO310ES)
 
+## Laboratorios
+[Lab 109 - Trabajar con tipos de datos numéricos]()
+
 
 ## Por que python?
 
@@ -46,3 +49,18 @@ Python es un lenguahje de programacion gratuito que proporciona grandes ventajas
 
 [Lab hello word](https://labs.vocareum.com/main/main.php?m=clabide&mode=s&asnid=754815&stepid=754816&hideNavBar=1)
 [lab tipos de datos](https://labs.vocareum.com/main/main.php?m=clabide&mode=s&asnid=754815&stepid=754816&hideNavBar=1)
+
+
+
+
+# Trabajar con tipos de datos numéricos
+
+
+Error de sintaxis > Problema en cómo escribimos el código > No se ejecuta
+
+Error semántico > Problema en la lógica del código > Se ejecuta pero no de la forma deseada
+lab3
+lab4
+lab5
+lab6
+
