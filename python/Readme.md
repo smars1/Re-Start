@@ -63,4 +63,11 @@ lab3
 lab4
 lab5
 lab6
+lab7
+lab8
 
+https://www.diagrams.net/
+
+
+tuto
+https://rogerdudler.github.io/git-guide/index.es.html
