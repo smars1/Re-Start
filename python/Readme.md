@@ -35,6 +35,8 @@ Nos brinda un entorno de desarrollo, entorno de ejecucion y sistema de control d
 Una vez que se haya terminado de escribir una aplicacion en Python, puede
 
 
+
+
 # AWS Lambda
 
 [Lamnda](https://aws.amazon.com/es/lambda/)
@@ -193,3 +195,15 @@ Las operaciones siguen un respectivo orden de jerarquias al momento de ejecutars
 ### Excepciones 
 Se puede trabajar con exepciones, las exepciones dan como resultado un seguimiento de pila, que es una lista de formas de que algo salio mal. 
 Habitualmente los IDE enumeran los errores
+La excepciones son errores que el interprete de python genera cuando se produce un errror en el codigo.
+
+
+# Practicar python 
+[practicar python](https://www.hackerrank.com/domains/python)
+[]()
+[Practicar JavaScript](https://grasshopper.app/es_419/)
+
+# ***Nota Comprender bien la estructura del formato json para el examen***
+
+
+
