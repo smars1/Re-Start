@@ -1,6 +1,11 @@
 # Introduccion a Python
 [link](https://awsrestart.vitalsource.com/reader/books/PROGPYTHONINTRO310ES)
 
+Recursos:
+- https://www.w3schools.com/python/default.asp
+- https://aprendeconalf.es/docencia/python/retos/
+- https://pythonprinciples.com/challenges/
+
 ## Laboratorios
 [Lab 109 - Trabajar con tipos de datos numéricos]()
 
@@ -204,6 +209,294 @@ La excepciones son errores que el interprete de python genera cuando se produce 
 [Practicar JavaScript](https://grasshopper.app/es_419/)
 
 # ***Nota Comprender bien la estructura del formato json para el examen***
+
+# Flujos de control
+[Link](https://awsrestart.vitalsource.com/reader/books/PROGFLOWCONTROL310ES/pageid/0)
+
+El control de flujo es el orden en el que se ejecutan las instruciones individuales o llmadas funciones de un programa impresindible
+
+## Instrucciones condicionales en codigo
+Con los condicionales el programa se ejecutara dependiendo la condicional que se cumpla, esta se evaluan dependiendo como estan enlistadas de arriba hacia abajo, las instrucciones que no se ejecutan seran eveluaras y en caso de que no se ejecute su instruccion, significara que no se esta cumpliendo su condicional, pero el programa la esta evaluando y la ejecutara en caso de que se cumpla la condicion.
+
+```.py
+edad = 21
+
+if edad > 18:
+  print("adulto")
+else:
+  print("niño")
+```
+
+### Ejemplo condicional if
+
+```.py
+bananas = 1
+
+if bananas >= 4:
+    print("Tengo un monton de bananas, tengo: ")
+    
+elif bananas >= 1:
+    print("Tengo algunas bananas, tengo: ")
+else:
+    print("No tengo bananas")
+```
+
+
+
+una estructura while puede ejecutarse infinitamente por lo que hay que tener cuidado para que esto no ocurra si es que no es deseado, para ello podemos incluir un contador que nos detenga el bucle, si no de lo contrario el bucle podria repetirse indefinidamente.
+
+### Ejemplo de estructura while
+
+```.py
+count = 0 
+
+while count <= 3:
+    print("Me gusta aprender python")
+    count= count + 1
+```
+
+## Listas 
+podemos crear listas, las cuales son un grupo de datos mutables, estan pueden agrupar un grupo similar de datos o puede contener tambien diferentes tipos de datos.
+
+```.py
+lista1 = [1,2,3,4,5]
+lista2 = ["Diego", "Atzin", "Ama"]
+lista3 = [1,"Diego", 2, "Atzin", 3, "Ama" ]
+
+print(lista1)
+print(lista2)
+print(lista3)
+```
+
+## Bucles y listas 
+podemos hacer el recorrido de una lista 
+
+```.py
+for num in [1, 2, 3]:
+  print(num)
+```
+Tambien podemos visualizar la estructura utilizando listas existentes 
+
+```.py
+lista1 = [1,2,3,4,5]
+lista2 = ["Diego", "Atzin", "Ama"]
+lista3 = [1,"Diego", 2, "Atzin", 3, "Ama" ]
+
+for num in lista1:
+    print(num)
+    
+for num in lista2:
+    print(num)
+
+for num in list3:
+    print(num)
+```    
+
+podemos tambien hacer recorridos con el metodo range(a,b,c)  se determina range(inicial, final, paso o salto de valor)
+```.py
+for num in range (1, 101, 10):
+    print(num)
+```
+
+## Diccionario
+ Para crear un diccionario vacío, utilice un par de llaves sin nada dentro: {}.
+- Las claves se separan de sus valores con dos puntos: {"Key":"Value"}.
+- Recupere un valor en el diccionario por su clave: myDict.get("key") o myDict["key"]
+
+### Ejemplo
+
+```.py
+dic = {}
+dic["edad"] = 18
+dic["nombre"] = "Atzin"
+
+print(dic["edad"])
+print(dic["nombre"])
+```
+
+Tambien podemos tambien recorrer los diccionarios con un for, pero para imprimirlo de forma completa, clave valor deberemos usar el metodo .items()
+### Ejemplo
+En el siguiente codigo agregamos un for  en el que recorremos dic con el metodo items() la salida del print nos debera dar las clave:valor del diccionario.
+
+```.py
+dic = {}
+dic["edad"] = 18
+dic["nombre"] = "Atzin"
+
+print(dic["edad"])
+
+for ClaveValor in dic.items():
+    print(ClaveValor)
+```
+
+Tambien podemo manipularlo de una mejor manera agregando una segunda variable que lo recorra para que nos separe la clave y el valor en diferentes variables.
+
+### Ejemplo
+A la salida de este printe nos debe separa la clave y valor en difentes variables, esto nos puede servir pra manipular de una mejor manera el diccionario.
+
+```.py 
+dic = {}
+dic["edad"] = 18
+dic["nombre"] = "Atzin"
+
+print(dic["edad"])
+
+for Clave, Valor in dic.items():
+    print(Clave, Valor)
+```
+
+## Entradas de datos. input()
+la funcion input() solicita al usuario 
+
+
+# Lab 12 - Cálculo de la carga neta de la insulina mediante listas y bucles de Python
+```py
+# Python3.6  
+# Coding: utf-8  
+# Store the human preproinsulin sequence in a variable called preproinsulin:  
+preproInsulin = "malwmrllpllallalwgpdpaaafvnqhlcgshlvealylvcgergffytpktrreaedlqvgqvelgggpgagslqplalegslqkrgiveqcctsicslyqlenycn"  
+# Store the remaining sequence elements of human insulin in variables:  
+lsInsulin = "malwmrllpllallalwgpdpaaa"  
+bInsulin = "fvnqhlcgshlvealylvcgergffytpkt"  
+aInsulin = "giveqcctsicslyqlenycn"  
+cInsulin = "rreaedlqvgqvelgggpgagslqplalegslqkr"  
+insulin = bInsulin + aInsulin
+
+pKR = {}
+pKR = {'y':10.07,'c': 8.18,'k':10.53,'h':6.00,'r':12.48,'d':3.65,'e':4.25}
+insulin.count("Y")
+float(insulin.count("Y"))
+print(float(insulin.count("Y")))
+
+seqCount = ({x: float(insulin.count(x)) for x in ['y','c','k','h','r','d','e']})
+print(seqCount)
+
+
+pH = 0
+
+while (pH <= 14):
+    netCharge = (
+    +(sum({x: ((seqCount[x]*(10**pKR[x]))/((10**pH)+(10**pKR[x]))) \
+    for x in ['k','h','r']}.values()))
+    -(sum({x: ((seqCount[x]*(10**pH))/((10**pH)+(10**pKR[x]))) \
+    for x in ['y','c','d','e']}.values())))
+    print('{0:.2f}'.format(pH), netCharge)
+    pH +=1
+```
+
+# Funciones
+[Link](https://awsrestart.vitalsource.com/reader/books/PROGFUNCTIONS310ES/pageid/0)
+
+Las funciones son un secuencia con nombre de instrucciones que van juntas. su objetivo principal es ayudar a organizar los programas en fragmentos que coincidan con su forma de pensar acerca de la solucion al problema.
+
+![image](https://user-images.githubusercontent.com/42829215/168664278-50bf728b-e3f4-4a7a-8fc5-6df715100a93.png)
+
+Las funciones se utilzan cuando se debe utilizar el mismo bloque de codigo varias veces, la reutilizacion es la razon principal de las funcions
+
+## Estructutra de una funcion
+- identificador 
+- argumento
+- que devuelve
+- utilidad
+
+```.py
+def demo(x):
+  y = x + 3
+  return y
+      
+print (demo(3))
+```
+
+organizar el codigo en funciones faclita su lectura. Puede resultar dificil interpretar lo que hace la primera linea de codigo, El uso de una funcion con el nombre adecuado que toma argumentos con el nombre adecuado facilita toda la interpretacion y el uso de codigo.
+
+# Lab 13 - Uso de funciones para implementar un cifrado César
+
+```.py
+# definimos una funcion para el usuario
+def getDoubleAlphabet(alphabet):
+    doubleAlphabet = alphabet + alphabet
+    return doubleAlphabet
+    
+# Solicitamos al usuario una entrada de datos
+def getMessage():
+    stringToEncrypt = input("Please enter a message to encrypt: ")
+    return stringToEncrypt
+    
+#Solictimamos una clave de cifrado
+def getCipherKey():
+    shiftAmount = input( "Please enter a key (whole number from 1-25): ")
+    return shiftAmount 
+
+#Diseñsamos el algoritmo de cifrado
+def encryptMessage(message, cipherKey, alphabet):
+    encryptedMessage = ""
+    uppercaseMessage = ""
+    uppercaseMessage = message.upper()
+    for currentCharacter in uppercaseMessage:
+        position = alphabet.find(currentCharacter)
+        newPosition = position + int(cipherKey)
+        if currentCharacter in alphabet:
+            encryptedMessage = encryptedMessage + alphabet[newPosition]
+        else:
+            encryptedMessage = encryptedMessage + currentCharacter
+    return encryptedMessage
+    
+# Decifrado de un mensaje    
+def decryptMessage(message, cipherKey, alphabet):
+    decryptKey = -1 * int(cipherKey)
+    return encryptMessage(message, decryptKey, alphabet)
+    
+    
+# Creamos la logica principal del programa 
+def runCaesarCipherProgram():
+    myAlphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    print(f'Alphabet: {myAlphabet}')
+    myAlphabet2 = getDoubleAlphabet(myAlphabet)
+    print(f'Alphabet2: {myAlphabet2}')
+    myMessage = getMessage()
+    print(myMessage)
+    myCipherKey = getCipherKey()
+    print(myCipherKey)
+    myEncryptedMessage = encryptMessage(myMessage, myCipherKey, myAlphabet2)
+    print(f'Encrypted Message: {myEncryptedMessage}')
+    myDecryptedMessage = decryptMessage(myEncryptedMessage, myCipherKey, myAlphabet2)
+    print(f'Decypted Message: {myDecryptedMessage}')
+    
+# llamamos a la funcion 
+runCaesarCipherProgram()
+```
+
+# Modulos y bibliotecas en python 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
