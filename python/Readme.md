@@ -467,11 +467,208 @@ runCaesarCipherProgram()
 ```
 
 # Modulos y bibliotecas en python 
+[Link](https://awsrestart.vitalsource.com/reader/books/PROGMODSLIBRARIES310ES/pageid/0)
+
+- propositos de un modulo
+- Describir la biblioteca estandar 
+
+La biblioteca de python es una coleccion de modulos de script a los que puede accder un programa de python. Simplifica el proceso de programacion al eleminar al necesisdad de rescribir codigo existente.
+
+- Reutilzar codigo significa que es menos probable que encuentres errores.
+- La importacion de modulos puede consultar la documentacion del mudulo.
+- Los modulos mas utilizados se pueden aprender un vez 
+
+## Los tipos de modulos:
+Podemos crear nuestros modulos para completar un conjunto especifico de tareas o funciones agrupadas o bien utilizar fuentes externas o empaquetados.
+
+## Importar modulos
+Para importar un modulo de a biblioteca estandar deberemos hacer uso de le comando import, tambien puede importar funciones o constantes de especificas de un modulo con el comando from.
+
+- Ejemplo
+```py
+import math 
+from math import pi
+from math import exp 
+```
+para importar el modulo o la funcion, antes debe importarlos, incluso si el modulo forma parte de la biblioteca estandar.
+
+para crear un modulo propio:
+- Cree un nombre de archivo con la extension .py 
+- Agregue el codigo para definir algunas funciones.
+- ahora puede importar mymodule en otros archivos de python y utilizar el codigo definido en el modulo.
+
+![image](https://user-images.githubusercontent.com/42829215/168836180-3cc0a56a-3d71-4c41-8aec-d492131ff6e3.png)
+![image](https://user-images.githubusercontent.com/42829215/168836217-3874b67e-3a6c-4084-b95b-19a9643afbc6.png)
+
+## Control de excepciones
+
+El control de excepciones es otra forma de control de flujo, cuando se produce un error en lugar de fallar y salir del programa puede utilizar un bloque try/except.
+Debe especificar la excepcion que se espera que se produsca.
+
+## Ejemplo: control de excepciones
+
+![image](https://user-images.githubusercontent.com/42829215/168841942-9988b806-ab4e-4eec-bef2-fa3939b22cde.png)
+
+## SO: Modulo del sistema opetarivo
+El SO forma parte de la biblioteca estándar de Python.
+El módulo del SO proporciona funciones del sistema operativo. La salida del módulo depende del sistema operativo subyacente, generalmente, con las mismas entradas.
+
+• Las capacidades comunes del módulo del SO son: información de variables del entorno, manejo de archivos, salto de directorio y administración de procesos.
+
+• Los programas que importan y utilizan el módulo del SO suelen ser más transferibles entre diferentes plataformas.
+
+
+- Sistema operativo anfitrión: 
+  - getlogin: devuelve el nombre del usuario que ha iniciado sesión 
+  - getgrouplist: devuelve una lista de los ID de grupo a los que pertenece un usuario 
+  - getenv: devuelve el valor de la variable de entorno que se le pasa 
+  - uname: devuelve información para identificar el SO actual 
+  - system: se utiliza para ejecutar comandos en un subshell del sistema
+
+- Funciones comunes para archivos: 
+  - chown: cambia la propiedad de un archivo 
+  - chmod: cambia los permisos de acceso de un archivo
+  - remove: elimina el archivo de la ruta indicada
+
+- Funciones comunes en el módulo os para directorios: 
+  - getcwd: obtiene el directorio de trabajo actual
+  - listdir: muestra el contenido del directorio actual 
+  - mkdir: crea un directorio nuevo
+
+## Ejecutar comandos en el sistema anfitrion 
+
+![image](https://user-images.githubusercontent.com/42829215/168845012-417a8046-e62c-427f-ae84-fa96a032ecc2.png)
 
 
 
+# JSON
+JSON es un formato de archivo estandar que transmite datos.
+
+## Funciones utiles del modulo JSON
+- dump
+- dumps
+- load
+- loads 
+
+- dump y dumps: convierten varios tipos de datos estructurados en una cadena, que se puede escribir en un archivo.
+- load y loads: vuelven a convertir una cadena en datos estructurados. 
+-  dump y load: trabajan directamente con archivos.
+-  dumps y loads: trabajan con cadenas. 
+
+***Nota: La s al final del nombre es por cadena (string).***
+
+JSON se utiilza para convertir grandes  cantidades de datos en cadenas y luego convertirlos a sus tipos de datos correctos.
+JSON toma un valor flotante y lo convierte en una cadena para que la informacion se pueda 
+
+# pip 
+El pip es el controlador de paquete de python  y es similar a apt en Linux. 
+
+• Se utiliza para instalar paquetes de terceros. Un paquete contiene uno o más módulos de Python que puede utilizar en su código.
+
+• Se instala junto con Python. No se llama desde Python; se llama a pip desde la línea de comandos, como sucede con Python.
+
+# Lab - 14 - Creación de controladores de archivos y módulos para recuperar información sobre la insulina
+
+# Python para la administracion de sistemas
+[Link](https://awsrestart.vitalsource.com/reader/books/PROGSYSADMINISTRATION310ES/pageid/0)
+
+## Como administrar datos 
+
+## Actividad
+
+### Agrgar un usuario
+
+![image](https://user-images.githubusercontent.com/42829215/168876497-fc035e7a-df96-4bfb-b104-2620069249eb.png)
+
+### Elminacion de un usuario
+
+![image](https://user-images.githubusercontent.com/42829215/168876906-2a346169-e66d-4a42-9c29-e178d3a341cc.png)
+
+### Agregar un usuario a un grupo
+
+![image](https://user-images.githubusercontent.com/42829215/168877946-4a132578-a56c-4e17-8e86-7bbb9d0df6bd.png)
+
+### Agregar un usuario a un grupo 3ra forma
+
+![image](https://user-images.githubusercontent.com/42829215/168878506-a8a00542-1abf-4357-9fee-bee626438419.png)
+
+### Agregar un usuario a un grupo  4ta forma 
+
+![image](https://user-images.githubusercontent.com/42829215/168879746-c307b66f-565b-4ba2-a9f3-cc7dfe9280b0.png)
+
+### Control de paquetes 2da forma
+
+![image](https://user-images.githubusercontent.com/42829215/168894277-b432789d-f034-4398-b9d2-8bd0b57e3035.png)
+
+### Control de paquetes remover un archivo
+
+![image](https://user-images.githubusercontent.com/42829215/168894769-8ac56e31-7301-4ea4-95be-462d48589377.png)
+
+## Un mejor os.system(): subprocess.run()
+
+En python V3, el modulo os ha quedado obsoleto y se ha reemplazado por el modulo de subprocess.
+
+### os.system() 
+- Se ejecuta en un subshell, que suele ser Bash en linux.
+- El shell toma la cadena dada e interpreta los caracteres de escape.
+  - Ejemplo:
+   
+  ```.py 
+  os.system("python -version")
+  ```
 
 
+
+## Por que subprocess.run() es mejor que os.system()
+
+- Seguridad: Los desarrolladores
+
+
+# LAB - 15 - Introducción a la administración del sistema con Python
+
+## Información general sobre el laboratorio
+Puede utilizar Linux para realizar muchas tareas administrativas desde el terminal o desde la línea de comandos de Bash. Python proporciona varios módulos que también puede utilizar para ejecutar comandos en la línea de comandos. En este laboratorio, utilizará os.system() y subprocess.run() para ejecutar comandos de Bash desde Python.
+
+## En este laboratorio, deberá realizar lo siguiente:
+
+- utilizar os.system() para ejecutar un comando de Bash
+- utilizar subprocess.run() para ejecutar comandos de Bash
+
+# Depuracion y pruebas
+[link](https://awsrestart.vitalsource.com/reader/books/PROGDEBUGGINGTESTING310ES/pageid/0)
+
+- Explicar el proposito de depurar
+- encontrar errores de codigo
+- anailisis estatitico de python
+
+La depuracion es un proceso que permite revisar nuestro codigo para identificar errores 
+
+![image](https://user-images.githubusercontent.com/42829215/168904397-eb6c9b3a-4a75-4326-b067-105bf8ac5d38.png)
+
+Existen difenretes tipos de depuracion tales como: 
+- ### El analisis estatico
+
+El analisis estatico consiste en el que se lleva a cabo bajo la marcha, durante desarrollamos codigo los IDE ya nos marcan errores de sintaxis o de logica.
+Algunas ventajas y desventajas son:
+
+- Ventajas
+  - Idetificar la ubucacion exacta de los problemas de codigo 
+  - Tiempo de respuesta mas rapido
+  - las pruebas posteriores tienen problema
+  - la deteccion temprana de errores reduce costos
+
+- Desventjas :
+  - El análisis manual lleva mucho tiempo.
+  - Las herramientas de automatización pueden producir falsos positivos y falsos negativos.
+  - La automatización puede dar por hecha la seguridad.
+  - La automatización es tan buena como los parámetros que se utilizan para configurar la herramienta.
+  
+  
+- EL Analisis dinamico
+
+El analisis dinamico se realiza mientras el codigo esta en ejecucion, de esta manera podemos ejecutar codigo linea por linea para verificar que no alla fallos en el codigo
+
+## Monitoreo de registros
 
 
 
