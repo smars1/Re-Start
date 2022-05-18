@@ -668,25 +668,261 @@ Algunas ventajas y desventajas son:
 
 El analisis dinamico se realiza mientras el codigo esta en ejecucion, de esta manera podemos ejecutar codigo linea por linea para verificar que no alla fallos en el codigo
 
+## Aserciones
+Las aserciones son condiciones, tal como las instrucciones if, que comprueban los valores de las aplicaciones,  el analisis dinamico utiliza instrucciones de assercion durante el tiempo de ejecucion para generar errores cuando se producen determinadas condiciones.
+
+A modo de ejemplo considere la siguiente funcion. El desarrollador quiere asegurarse de que el valorde edad siempre sea un numero positivo superior a cero. la siguiente asercion veridica esto.
+
+```.py
+def loguserage(age):
+    asert age <= 0, "Invalid age was suplied" 
+```
+
+```.py
+# Solicite un valor al usuario y confirme que sea mayor que 0
+def checkvalue(valuetocheck):
+    assert (type(valuetocheck) is int), "You must enter a number." 
+    assert (valuetocheck > 0), "Value entered must be greater than 0"
+    if valuetocheck > 4: 
+        print("Value is greater than 4")
+
+var = int(input("Enter a number greater than 0: ")) 
+checkvalue(var)
+```
 ## Monitoreo de registros
 
+# Pruebas de software
+Se realizan muchos tipos de pruebas para garantizar el funcionamiento del software. 
+
+![image](https://user-images.githubusercontent.com/42829215/169085471-35155fb1-532f-4d86-abd0-ef4c500203ff.png)
 
 
+## Pruebas de unidad
+Es la parte mas pequeña de cualquier software a la que se le pueden realizar pruebas. es el nivel mas basico de pruebas. por lo general, tiene una entrada o varias entradas en una sola salida. 
+
+## pruebas de integracion 
+Las unidades individuales se combinan y se prueban en grupo. Prueba la interaccion entre las diferentes partes del software para poder identificar problemas.
+
+Una buena analogia sobre esto, puede ser la fabricacion de un producto, por lo general todas sus piezas se fabrican por separado, todos los componentes pasan por pruebas individuales de calidad. Pero cuando ya se tiene mas de una unidad lista se puede probar la interaccion entre las unidades o piezas entre si.
+
+un desarrollador puede realizar esas pruebas de integracion, pero por lo general las realizan los probadores dedicados.
+
+## Pruebas del sistema 
+Se prueba una aplicacion completa e integrada. Este nivel determina si el software cumple con requisitos especificos.
+
+Cuando el producto esta completamente montado se realizan pruebas de funcionamiento.
+
+## Pruebas de aceptacion 
+Las pruebas de aceptacion son pruebas formalizadas  que tienne en cuenta necesidades del usuario, las necesidades empresariales y si el software es aceptable para su entrega al usuario final.
 
 
+# Lab - 16 - Uso del depurador
+
+Un error de software se refiere a un defecto o a una falla en un programa informático que provoca un resultado incorrecto o inesperado. Un depurador es un programa informático que se utiliza para probar y encontrar errores o depurar programas. Puede utilizar un depurador para examinar el código. El depurador de Python (pdb) es un depurador de código fuente interactivo para los programas de Python. En este laboratorio, utilizará el pdb para examinar los scripts que escribió en los laboratorios anteriores.
+
+En este laboratorio, deberá realizar lo siguiente:
+
+- explorar las características básicas del depurador de Python
+- utilizar el depurador de Python para examinar scripts
 
 
+# Lab - 17 - Depuración del programa de cifrado César
+
+Recuerde que un depurador es un programa informático que se utiliza para probar y encontrar errores o depurar programas. En este laboratorio, utilizará el depurador de Python (pdb) para encontrar y corregir errores en un programa de Python.
+
+En este laboratorio, deberá realizar lo siguiente:
+
+utilizar el depurador de Python
+depurar las diferentes versiones del programa de cifrado César que creó en un laboratorio anterior
+
+```.py
+# Module Lab: Caesar Cipher Program Bug #1
+#
+# In a previous lab, you created a Caesar cipher program. This version of
+# the program is buggy. Use a debugger to find the bug and fix it.
+
+# Double the given alphabet
+def getDoubleAlphabet(alphabet):
+    doubleAlphabet = alphabet + alphabet
+    return doubleAlphabet
+
+# Get a message to encrypt
+def getMessage():
+    stringToEncrypt = input("Please enter a message to encrypt: ")
+    return stringToEncrypt
+
+# Get a cipher key
+def getCipherKey():
+    shiftAmount = input("Please enter a key (whole number from 1-25): ")
+    return shiftAmount
+
+# Encrypt message
+def encryptMessage(message, cipherKey, alphabet):
+    encryptedMessage = ""
+    uppercaseMessage = ""
+    uppercaseMessage = message.upper()
+    for currentCharacter in uppercaseMessage:
+        position = alphabet.find(currentCharacter)
+        newPosition = position + cipherKey
+        if currentCharacter in alphabet:
+            encryptedMessage = encryptedMessage + alphabet[newPosition]
+        else:
+            encryptedMessage = encryptedMessage + currentCharacter
+    return encryptedMessage
+
+# Decrypt message
+def decryptMessage(message, cipherKey, alphabet):
+    decryptKey = -1 * int(cipherKey)
+    return encryptMessage(message, decryptKey, alphabet)
+
+# Main program logic
+def runCaesarCipherProgram():
+    myAlphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    print(f'Alphabet: {myAlphabet}')
+    myAlphabet2 = getDoubleAlphabet(myAlphabet)
+    print(f'Alphabet2: {myAlphabet2}')
+    myMessage = getMessage()
+    print(myMessage)
+    myCipherKey = getCipherKey()
+    print(myCipherKey)
+    myEncryptedMessage = encryptMessage(myMessage, myCipherKey, myAlphabet2)
+    print(f'Encrypted Message: {myEncryptedMessage}')
+    myDecryptedMessage = decryptMessage(myEncryptedMessage, myCipherKey, myAlphabet2)
+    print(f'Decrypted Message: {myDecryptedMessage}')
+
+# Main logic
+runCaesarCipherProgram()
+```
+
+## correccion 
+
+```.py 
+# Module Lab: Caesar Cipher Program Bug #1
+#
+# In a previous lab, you created a Caesar cipher program. This version of
+# the program is buggy. Use a debugger to find the bug and fix it.
+
+# Double the given alphabet
+def getDoubleAlphabet(alphabet):
+    doubleAlphabet = alphabet + alphabet
+    return doubleAlphabet
+
+# Get a message to encrypt
+def getMessage():
+    stringToEncrypt = input("Please enter a message to encrypt: ")
+    return stringToEncrypt
+
+# Get a cipher key
+def getCipherKey():
+    shiftAmount = input("Please enter a key (whole number from 1-25): ")
+    return shiftAmount
+
+# Encrypt message
+def encryptMessage(message, cipherKey, alphabet):
+    encryptedMessage = ""
+    uppercaseMessage = ""
+    uppercaseMessage = message.upper()
+    for currentCharacter in uppercaseMessage:
+        position = alphabet.find(currentCharacter)
+        newPosition = position + int(cipherKey)
+        if currentCharacter in alphabet:
+            encryptedMessage = encryptedMessage + alphabet[newPosition]
+        else:
+            encryptedMessage = encryptedMessage + currentCharacter
+    return encryptedMessage
+
+# Decrypt message
+def decryptMessage(message, cipherKey, alphabet):
+    decryptKey = -1 * int(cipherKey)
+    return encryptMessage(message, decryptKey, alphabet)
+
+# Main program logic
+def runCaesarCipherProgram():
+    myAlphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    print(f'Alphabet: {myAlphabet}')
+    myAlphabet2 = getDoubleAlphabet(myAlphabet)
+    print(f'Alphabet2: {myAlphabet2}')
+    myMessage = getMessage()
+    print(myMessage)
+    myCipherKey = getCipherKey()
+    print(myCipherKey)
+    myEncryptedMessage = encryptMessage(myMessage, myCipherKey, myAlphabet2)
+    print(f'Encrypted Message: {myEncryptedMessage}')
+    myDecryptedMessage = decryptMessage(myEncryptedMessage, myCipherKey, myAlphabet2)
+    print(f'Decrypted Message: {myDecryptedMessage}')
+
+# Main logic
+runCaesarCipherProgram()
+```
+
+# DevOps e integración continua 
+[Link](https://awsrestart.vitalsource.com/reader/books/PROGDEVOPSCONTINTEGRATION310ES/pageid/0)
+
+***Definir DevOps:*** 
+
+- Identificar los objetivos de DevOps
+- Identificar los desafíos que resuelve DevOps 
+- Describir la cultura de DevOps
+
+DevOps es una cultura y practica de ingenieria de software cuyo objetivo es unificar el desarollo (Dev) y las operaciones (Ops) de software.
+La caracteristica principal del movimiento es abogar por la automatizacion y el monitoreo en todas las etapas de la creacion del software.
+Estos pasos van desde la integracion, las pruebas y el lanzamiento hasta la implementacion y la administracion de la infraestructura.
+
+![image](https://user-images.githubusercontent.com/42829215/169144172-2f520750-bd56-4a2c-9c93-9627a62fa1f0.png)
+
+![image](https://user-images.githubusercontent.com/42829215/169144624-83f42073-d8d2-4c38-b5f6-5bf340fe56ff.png)
+
+## Secuencial frente agil
+
+- Analisis
+- Planificacion
+- Diseño
+- Compilar
+- Probar
+- Implementar
+
+# Integracion y entrega continuas (CI/CD)
+- Explicar la necesidad de la automatizacion 
+- Identificar los estados de la canalizacion (CI/CD)
+
+Cuando el desaroolo de software, puede resultar tedioso e inificiente realizar las tareas repetidamente. La automatizacion puede ayudar a resolver este problema.
+
+## Automatizacion: Riesgos
+Sobreautomatizacion
+
+- La sobreautomatizacion se produce cuando automatiza los pasos para un proceso de desarrollo para reducir la creatividad. si debe pensar y considerar pasos especificos de una manera diferente cada vez que los realiza, probablemente no deberia automatizarlos, por ejemplo, analizar, planificar y diseñar.
+
+- Subbautomatizacion se produce cuando se evita automatizacion para asegurarse de que las cosas se manejan cirrectamente o porque resulta util encontrar exactamente donde deja de funcionar el codigo. Los procesos que son buenos automatizar incluyen la compilacion, las pruebas y la implementacion.
+
+- Automatizacion deficiente
 
 
+## Herramientas para DevOps: automatizacion 
+La automatizacion tiene muchas herramientas:
+
+![image](https://user-images.githubusercontent.com/42829215/169150525-acf36bfb-9f8d-4525-b0d4-bff4fba1a0e6.png)
 
 
+La canalizacion de CI/CD es otra herramienta para la automatizacion. Consta de las siguientes dos partes:
+- Integracion continua (CI)
+- Entrega continua (CD)
+
+ ![image](https://user-images.githubusercontent.com/42829215/169150899-9b6ab3d0-6705-4476-a8ab-07d122fb13d1.png)
 
 
+## Integracion continua (CI)
+CI es la automatizacion para poner el codigo a disposicion de sus compañeros de equipo.
+
+![image](https://user-images.githubusercontent.com/42829215/169151017-e6261fb5-2994-44b8-b9ff-555470da8d1f.png)
+
+## Entrega continua (CD)
+- La CD es una extension de la CI
+- La CD  incluye una automatizacion de pruebas para todo el codigo que se envia.
 
 
+# Conocimientos claves 
 
-
-
+es un conjunto de practicas que combina el desarrollo de software y de TI.
 
 
 
