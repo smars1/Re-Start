@@ -924,8 +924,10 @@ CI es la automatizacion para poner el codigo a disposicion de sus compañeros de
 
 es un conjunto de practicas que combina el desarrollo de software y de TI.
 
+# Lab - Evaluación de una herramienta de DevOps
 
 
+# Lab - Análisis del valor de la automatización
 
 
 
