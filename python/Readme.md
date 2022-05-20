@@ -933,6 +933,7 @@ es un conjunto de practicas que combina el desarrollo de software y de TI.
 # Lab - Comparacion entre atumatizacion y orquestacion
 [Link](https://labs.vocareum.com/main/main.php?m=clabide&mode=s&asnid=754831&stepid=754832&hideNavBar=1)
 
+[Material de administracion de configuracion](https://w3.ual.es/~rguirado/posi/Tema5-Apartado5.pdf)
 
 # Configuration and management python
 
@@ -953,7 +954,24 @@ Los desarrolladores verifican el codigo de un repositorio como AWS codeCommit o 
 ### Ejemplo de la administracion de congiguracion 
 
 - Obetener un copia del repositorio remoto
-  - ```
+  - ```.sh
     $git @<examplerepo.org>:<username>/<sourcecode>.git
     ```
 
+## Seguridad de la adminstracion de configuracion 
+
+El echo que se deba conceder acceso a un repositorio impide el ingreso a personas no autorizadas al codigo fuente.
+
+Debido a que el acceso se registra, es posible saber :
+- Quien extrajo e ingreso codigo.
+- Cuando se realizaron las extracciones y los ingresos.
+- Que cambios de han confirmado.
+
+
+## Conclusiones importantes 
+- La infrastructura es una diciplina para garantizar le objetivo de los proyectos 
+
+![image](https://user-images.githubusercontent.com/42829215/169558757-f1e08b1a-c625-4724-9e7e-a4e558a3b2de.png)
+
+# Labortario desafios Script python 
+[Link](https://awsrestart.instructure.com/courses/866/modules/items/385544)
