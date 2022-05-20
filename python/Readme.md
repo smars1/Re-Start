@@ -930,8 +930,30 @@ es un conjunto de practicas que combina el desarrollo de software y de TI.
 # Lab - Análisis del valor de la automatización
 
 
-# Lab ' Comapracion entre atumatizacion y orquestacion
+# Lab - Comparacion entre atumatizacion y orquestacion
 [Link](https://labs.vocareum.com/main/main.php?m=clabide&mode=s&asnid=754831&stepid=754832&hideNavBar=1)
 
 
+# Configuration and management python
+
+- Definir la infraestructurra del proyecto
+- Explicar la infrastructura del proyecto, por que esta es importante para el desempeño del proyecto
+- Definir el proposito y la funcion de la administracion de ala configuracion de software 
+
+## Insfrastructura del proyecto 
+
+Hay muchas herramientas para crear infrastructura coherente entre los equipos.
+- por estilo
+- por logica
+
+## lad asministracion de la configuracion 
+
+Los desarrolladores verifican el codigo de un repositorio como AWS codeCommit o GitHub.
+
+### Ejemplo de la administracion de congiguracion 
+
+- Obetener un copia del repositorio remoto
+  - ```
+    $git @<examplerepo.org>:<username>/<sourcecode>.git
+    ```
 
