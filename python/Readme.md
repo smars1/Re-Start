@@ -930,8 +930,8 @@ es un conjunto de practicas que combina el desarrollo de software y de TI.
 # Lab - Análisis del valor de la automatización
 
 
-
-
+# Lab ' Comapracion entre atumatizacion y orquestacion
+[Link](https://labs.vocareum.com/main/main.php?m=clabide&mode=s&asnid=754831&stepid=754832&hideNavBar=1)
 
 
 
