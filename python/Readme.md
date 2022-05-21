@@ -1003,3 +1003,5 @@ Nos fijandonos que tenga los permisos de escrituta y ejecutar podemos abrir el m
 ```.sh
 vim myScriptPython.py
 ```
+
+
