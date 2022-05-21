@@ -33,11 +33,13 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
   - Descripcion: Descripcion detallada del uso y las funciones del comando. 
   - Opciones: Explicacion de las opciones del comando.
   sintaxis:
-  ```
+  
+  ```.sh
   man <CommandName> 
   ```
   Para buscar una cadena en la documentacion, utilice la barra diagonal: 
-  ```
+  
+  ```.sh
   /<searchString>
   ```
 
@@ -46,80 +48,93 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
 - ### Comando whoami  
   El comando whoami se usa con el fin de mostrar el nombre de usuario actual cuando se invoca el comando, normalmente se utilza cuando recien se ha iniciado sesion
   como UserA.
-  ```
+  
+  ```.sh
   whoami
   ```
 
 - ### Comando id
   El comando id se utiliza para identificar los el nombre de usuario y los grupos de los ID numericos (UID o ID) del usuario actual o de cualquier otro usuario del 
   servidor
-  ```
+  
+  ```.sh
   id
   ```
 - ### Comando hostname
   Este comando muesta el nombre de host TCP/IP. El nombre del anfitrion se utiliza para establecer o mostrar nombre de anfitrion, dominio o nodo actual del sistema.
   Muchos programas de red utilizan nombres de host para identificar el sistema.
-  ```
+  
+  ```.sh
   hostname
   ```
 
 - ### Comando uptime
   Este comando indica cuanto tiempo a estado encendido el sistema desde el ultimo arranque.
-  ```
+  
+  ```.sh
   uptime
   ```
 
 - ### Comando date 
   Este comando puede mostrar la hora actual en un formato determinado.
-  ```
+  
+  ```.sh
   date
   ```
 
 - ### Comando cal
   El comando cal puede mostrarnos un calendario, si no se especifican argumentos se nos muestra el mes actual. 
   El mes se puede especificar como un numero (1-12), un nombre de meso un nombre de mes abreviado segun las configuraciones regionales actuales.
-  ```
+  
+  ```.sh
   cal
   ```
   
 - ### Comando clear
   Nos limpia la pantalla de la terminal
-  ```
+  
+  ```.sh
   clear
   ```
 - ### Comando echo
   El comando echo coloca el texto especificado en la pantalla, en los scripts, resulta muy util proporcionar informacion a los usuarios a medida que se ejecuta el       script.
   Dirige el texto a la salida estandar o en scripts para proporcionar descripciones de los resultados mostrados.
-  ```
+  
+  ```.sh
   echo ' hola mundo!'
   ```
 
 - ### Comando history
   bash guarda una lista del historialde los comandos de cada usuario en un archivo en el directorio prinipal de ese usuario, el comando history muestra ese archivo de
   historial.
-  ```
+  
+  ```.sh
   history
   ```
   - ! y el numero de comando del archivo de historial repite un comando en especifico.
-    ```
+  - 
+    ```.sh
     !143
     ```
 - ### Comando touch
   Touch puede utizarse para crear, cambiar o modificar mascas de tiempo en archivos existentes como por ejemplo actualizar los tiempos de acceso a la hora actual.
   Tambien puede utilzarse para crear un nuevo archivo vacio en un directorio.
-  ```
+  
+  ```.sh
   touch file_name_1 file_name_2 file_name_3
   ```
 - ### Comando cat
-  Muestra el contenido de los archivos, este comando es muy util para los administradores, por que las configuraciones de Linux se guardan en archivos de texto
-  ```
+  Muestra el contenido de los archivos, este comando es muy util para los administradores, por que las configuraciones de Linux se guardan en archivos de texto.
+  
+  ```.sh
   cat file_name
   ```
 
 
 - ### Comando pwd 
   El comando pwd nos imprime el directorio de trabajo actual
-  ```
+  
+  ```.sh
   pwd
   ```
   
@@ -129,7 +144,8 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
   La entrada estandar (stdin) es el dispositivo a traves del cual se recibe normalmente la entrada: por ejemplo, un teclado o un escaner.
   La entrada estándar es el identificador de archivo que el proceso lee para obtener información suya. Puede ser del usuario que proporciona la información o de un 
   archivo.
-  ```
+  
+  ```.sh
   cat 0<myfirstscript
   ```
   Le indica a cat que tome las informacion de entrada de myfirstscript.
@@ -140,7 +156,8 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
   ### Salida estandar: Comando stdout
   Salida estandar (stdout)
   La salida estandar es el dispositivo a traves del cual se suministra normalmente la salida: Por ejemplo, el monitor o la pantalla de un dispositivo movil
-  ```
+  
+  ```.sh
   ls -l 1>folder.txt
   ```
     - Salida estandar: 1
@@ -158,7 +175,8 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
    Error estandar (stderr)
    El error estandar es cuando un proceso puede escribir mensajes de error.
    El error estándar (stderr) se utiliza para imprimir los mensajes de error en la pantalla de salida o en el terminal de la ventana.
-   ```
+   
+   ```.sh
     find / -name "*" -print 2> / dev/null 
    ```
      - Error estandar: 2
@@ -170,22 +188,25 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
  - ### Comando useradd
    Crea la cuenta de usuario y un directorio principal en /home, tambien define los valores predeterminados de la cuenta.
    
-   ```
+   ```.sh
     useradd UserName
    ```
    
     #### opciones
     Las opciones permiten personalizar la cuenta del usuario al momento de su creacion. El campo de comentarios se utilza a menudo para colocar el nombre completo del     usuario
     - -c Comentario 
-    ```
+    
+    ```.sh
     useradd -c "Nuevo empleado" UserName
     ````
     - -e Vencimiento de la cuenta
-    ```
+    
+    ```.sh
     useradd -e 2025-01-01 UserName
     ```
     -d Ruta de acceso al directorio principal
-    ```
+    
+    ```.sh
     useradd -d /users/UserName UserName
     ```
  - ### Comando usermod
@@ -195,11 +216,12 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
  - ### Comando userdel
    Utilice el comando userdel para eliminar una cuenta de usuario, utilice la opcion -r para borrar tambien el directorio principal del usuario.
    
-   ```
+   ```.sh
    userdel UserName
    ```
    Para borrar el directorio principal del usuario.
-   ```
+   
+   ```.sh
    userdel -r UserName
    ``` 
  - ### Comando passwd
@@ -207,7 +229,7 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
     - Debe ingresar la contraseña dos veces.
     - No se muestra ningun caracter en la pantalla cuando se escribe la contraseña.
      
-   ```
+   ```.sh
    passwd UserName
    ```
    
@@ -215,12 +237,13 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
  - ### Comando grep
    grep es una comando de linux para buscar texto. se puede utilzar de la siguiente manera para buscar la palabra hello en los archivos que se encuentran en              /etc/passwd: 
      
-   ```
+   ```.sh
    grep hello /etc/passwd
    ```
      
    Tambien se puede usar con la pleca ( | ) que redirige la salida del comando a otro comando.
-   ```
+   
+   ```.sh
    ls /etc/passwd | grep hello 
    ```
    - ls enumera todos los archivos de la carpeta /etc/passwd.
