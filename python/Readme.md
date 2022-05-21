@@ -975,3 +975,31 @@ Debido a que el acceso se registra, es posible saber :
 
 # Labortario desafios Script python 
 [Link](https://awsrestart.instructure.com/courses/866/modules/items/385544)
+
+## utilizados Comandos
+
+Creamos una carpteta para alojar el script de python y el archivo .txt, por lo que usamos mkdir el cual nos crea una carpeta
+
+```.sh
+mkdir script_python
+``` 
+
+Posteriormente utilizamos el comando touch para crear un archivo .py, en el cual crearemos el Script de python.
+
+```.sh 
+touch myScriptPython.py
+```
+
+para poder editarlo podemos configurar los permisos con el comando chmod tambien podemos ver los permisos utilizando el comando ls - la.
+
+```.sh 
+ls -la 
+chmod 777 myScriptPytho.py
+ls -la
+```
+
+Nos fijandonos que tenga los permisos de escrituta y ejecutar podemos abrir el myScriptPython para comenzar a desarrollar el script de python, para ello podemos abrirlo con el editor de vim o nano
+
+```.sh
+vim myScriptPython.py
+```
