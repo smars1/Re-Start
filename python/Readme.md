@@ -48,14 +48,15 @@ Una vez que se haya terminado de escribir una aplicacion en Python, puede
 
 # Script 
 
+ El scripting de shell es una gran herramienta para la administración. Cuando la administración se complica, generalmente se prefiere Python para este tipo de tareas.
 
 
 Python es un lenguahje de programacion gratuito que proporciona grandes ventajas para escribir codigo
 
 
 
-[Lab hello word](https://labs.vocareum.com/main/main.php?m=clabide&mode=s&asnid=754815&stepid=754816&hideNavBar=1)
-[lab tipos de datos](https://labs.vocareum.com/main/main.php?m=clabide&mode=s&asnid=754815&stepid=754816&hideNavBar=1)
+- [Lab hello word](https://labs.vocareum.com/main/main.php?m=clabide&mode=s&asnid=754815&stepid=754816&hideNavBar=1)
+- [lab tipos de datos](https://labs.vocareum.com/main/main.php?m=clabide&mode=s&asnid=754815&stepid=754816&hideNavBar=1)
 
 
 
@@ -79,6 +80,7 @@ https://www.diagrams.net/
 
 
 tuto
+
 https://rogerdudler.github.io/git-guide/index.es.html
 
 # Git y GitHub
@@ -90,57 +92,8 @@ github es para trabajar de manera colaborativa.
 - aprender a regresar a un version anterior
 - recuperar versiones anteriores
 
-# Lab 10 - 
 
 
-```.py
-texto = " "
-sin_espacio = texto.replace(" ","")
-con_numero = texto.replace(" ","0")
-
-print(sin_especio)
-print(con_numero)
-
-```
-
-
-
-# LAB 11
-
-El estilo PEP nos recomienda en las buenas practicas, la longitud maxima de las lineas de archivo python y otros estandares de la PEP 8 nos recomeienda un maximo de 79 caracteres por linea se podran separar con una diagonal invertida al final
-
-***Ejemplo***
-```
-"malwmrllpllallalwgpdpaaafvnqhlcgshlvealylvcgergffytpktr" \
-"reaedlqvgqvelgggpgagslqplalegslqkrgiveqcctsicslyqlenycn"
-```
-
-## ***Nota: Item: .regresa clave valor, .value: regresa el valor, .keys: regresa la clave***
-
-
-
-
-```.py
-# Printing to console using concatenated strings inside the print function (one-liner):
-
-print("La secuencia de la insulina , en una cadena es: " + aInsulin)
-
-# Calculating the molecular weight of insulin  
-# Creating a list of the amino acid (AA) weights  
-aaWeights = {'A': 89.09, 'C': 121.16, 'D': 133.10, 'E': 147.13, 'F': 165.19,
-'G': 75.07, 'H': 155.16, 'I': 131.17, 'K': 146.19, 'L': 131.17, 'M': 149.21,
-'N': 132.12, 'P': 115.13, 'Q': 146.15, 'R': 174.20, 'S': 105.09, 'T': 119.12,
-'V': 117.15, 'W': 204.23, 'Y': 181.19}  
-
-# Count the number of each amino acids  
-# que tiene guardado insulin 
-print(insulin)
-# contamos el numero de carateres que estan guardados en la variable insulin en caso de ser minusculas los convertimnos a mayusculas
-aaCountInsulin = ({x: float(insulin.upper().count(x)) for x in ['A', 'C',
-'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T',
-'V', 'W', 'Y']})
-print(aaCountInsulin)
-```
 
 
 # python basico
@@ -349,40 +302,7 @@ for Clave, Valor in dic.items():
 la funcion input() solicita al usuario 
 
 
-# Lab 12 - Cálculo de la carga neta de la insulina mediante listas y bucles de Python
-```py
-# Python3.6  
-# Coding: utf-8  
-# Store the human preproinsulin sequence in a variable called preproinsulin:  
-preproInsulin = "malwmrllpllallalwgpdpaaafvnqhlcgshlvealylvcgergffytpktrreaedlqvgqvelgggpgagslqplalegslqkrgiveqcctsicslyqlenycn"  
-# Store the remaining sequence elements of human insulin in variables:  
-lsInsulin = "malwmrllpllallalwgpdpaaa"  
-bInsulin = "fvnqhlcgshlvealylvcgergffytpkt"  
-aInsulin = "giveqcctsicslyqlenycn"  
-cInsulin = "rreaedlqvgqvelgggpgagslqplalegslqkr"  
-insulin = bInsulin + aInsulin
 
-pKR = {}
-pKR = {'y':10.07,'c': 8.18,'k':10.53,'h':6.00,'r':12.48,'d':3.65,'e':4.25}
-insulin.count("Y")
-float(insulin.count("Y"))
-print(float(insulin.count("Y")))
-
-seqCount = ({x: float(insulin.count(x)) for x in ['y','c','k','h','r','d','e']})
-print(seqCount)
-
-
-pH = 0
-
-while (pH <= 14):
-    netCharge = (
-    +(sum({x: ((seqCount[x]*(10**pKR[x]))/((10**pH)+(10**pKR[x]))) \
-    for x in ['k','h','r']}.values()))
-    -(sum({x: ((seqCount[x]*(10**pH))/((10**pH)+(10**pKR[x]))) \
-    for x in ['y','c','d','e']}.values())))
-    print('{0:.2f}'.format(pH), netCharge)
-    pH +=1
-```
 
 # Funciones
 [Link](https://awsrestart.vitalsource.com/reader/books/PROGFUNCTIONS310ES/pageid/0)
@@ -409,62 +329,7 @@ print (demo(3))
 
 organizar el codigo en funciones faclita su lectura. Puede resultar dificil interpretar lo que hace la primera linea de codigo, El uso de una funcion con el nombre adecuado que toma argumentos con el nombre adecuado facilita toda la interpretacion y el uso de codigo.
 
-# Lab 13 - Uso de funciones para implementar un cifrado César
 
-```.py
-# definimos una funcion para el usuario
-def getDoubleAlphabet(alphabet):
-    doubleAlphabet = alphabet + alphabet
-    return doubleAlphabet
-    
-# Solicitamos al usuario una entrada de datos
-def getMessage():
-    stringToEncrypt = input("Please enter a message to encrypt: ")
-    return stringToEncrypt
-    
-#Solictimamos una clave de cifrado
-def getCipherKey():
-    shiftAmount = input( "Please enter a key (whole number from 1-25): ")
-    return shiftAmount 
-
-#Diseñsamos el algoritmo de cifrado
-def encryptMessage(message, cipherKey, alphabet):
-    encryptedMessage = ""
-    uppercaseMessage = ""
-    uppercaseMessage = message.upper()
-    for currentCharacter in uppercaseMessage:
-        position = alphabet.find(currentCharacter)
-        newPosition = position + int(cipherKey)
-        if currentCharacter in alphabet:
-            encryptedMessage = encryptedMessage + alphabet[newPosition]
-        else:
-            encryptedMessage = encryptedMessage + currentCharacter
-    return encryptedMessage
-    
-# Decifrado de un mensaje    
-def decryptMessage(message, cipherKey, alphabet):
-    decryptKey = -1 * int(cipherKey)
-    return encryptMessage(message, decryptKey, alphabet)
-    
-    
-# Creamos la logica principal del programa 
-def runCaesarCipherProgram():
-    myAlphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    print(f'Alphabet: {myAlphabet}')
-    myAlphabet2 = getDoubleAlphabet(myAlphabet)
-    print(f'Alphabet2: {myAlphabet2}')
-    myMessage = getMessage()
-    print(myMessage)
-    myCipherKey = getCipherKey()
-    print(myCipherKey)
-    myEncryptedMessage = encryptMessage(myMessage, myCipherKey, myAlphabet2)
-    print(f'Encrypted Message: {myEncryptedMessage}')
-    myDecryptedMessage = decryptMessage(myEncryptedMessage, myCipherKey, myAlphabet2)
-    print(f'Decypted Message: {myDecryptedMessage}')
-    
-# llamamos a la funcion 
-runCaesarCipherProgram()
-```
 
 # Modulos y bibliotecas en python 
 [Link](https://awsrestart.vitalsource.com/reader/books/PROGMODSLIBRARIES310ES/pageid/0)
@@ -567,7 +432,7 @@ El pip es el controlador de paquete de python  y es similar a apt en Linux.
 
 • Se instala junto con Python. No se llama desde Python; se llama a pip desde la línea de comandos, como sucede con Python.
 
-# Lab - 14 - Creación de controladores de archivos y módulos para recuperar información sobre la insulina
+
 
 # Python para la administracion de sistemas
 [Link](https://awsrestart.vitalsource.com/reader/books/PROGSYSADMINISTRATION310ES/pageid/0)
@@ -624,15 +489,9 @@ En python V3, el modulo os ha quedado obsoleto y se ha reemplazado por el modulo
 - Seguridad: Los desarrolladores
 
 
-# LAB - 15 - Introducción a la administración del sistema con Python
 
-## Información general sobre el laboratorio
-Puede utilizar Linux para realizar muchas tareas administrativas desde el terminal o desde la línea de comandos de Bash. Python proporciona varios módulos que también puede utilizar para ejecutar comandos en la línea de comandos. En este laboratorio, utilizará os.system() y subprocess.run() para ejecutar comandos de Bash desde Python.
 
-## En este laboratorio, deberá realizar lo siguiente:
 
-- utilizar os.system() para ejecutar un comando de Bash
-- utilizar subprocess.run() para ejecutar comandos de Bash
 
 # Depuracion y pruebas
 [link](https://awsrestart.vitalsource.com/reader/books/PROGDEBUGGINGTESTING310ES/pageid/0)
@@ -716,144 +575,6 @@ Cuando el producto esta completamente montado se realizan pruebas de funcionamie
 Las pruebas de aceptacion son pruebas formalizadas  que tienne en cuenta necesidades del usuario, las necesidades empresariales y si el software es aceptable para su entrega al usuario final.
 
 
-# Lab - 16 - Uso del depurador
-
-Un error de software se refiere a un defecto o a una falla en un programa informático que provoca un resultado incorrecto o inesperado. Un depurador es un programa informático que se utiliza para probar y encontrar errores o depurar programas. Puede utilizar un depurador para examinar el código. El depurador de Python (pdb) es un depurador de código fuente interactivo para los programas de Python. En este laboratorio, utilizará el pdb para examinar los scripts que escribió en los laboratorios anteriores.
-
-En este laboratorio, deberá realizar lo siguiente:
-
-- explorar las características básicas del depurador de Python
-- utilizar el depurador de Python para examinar scripts
-
-
-# Lab - 17 - Depuración del programa de cifrado César
-
-Recuerde que un depurador es un programa informático que se utiliza para probar y encontrar errores o depurar programas. En este laboratorio, utilizará el depurador de Python (pdb) para encontrar y corregir errores en un programa de Python.
-
-En este laboratorio, deberá realizar lo siguiente:
-
-utilizar el depurador de Python
-depurar las diferentes versiones del programa de cifrado César que creó en un laboratorio anterior
-
-```.py
-# Module Lab: Caesar Cipher Program Bug #1
-#
-# In a previous lab, you created a Caesar cipher program. This version of
-# the program is buggy. Use a debugger to find the bug and fix it.
-
-# Double the given alphabet
-def getDoubleAlphabet(alphabet):
-    doubleAlphabet = alphabet + alphabet
-    return doubleAlphabet
-
-# Get a message to encrypt
-def getMessage():
-    stringToEncrypt = input("Please enter a message to encrypt: ")
-    return stringToEncrypt
-
-# Get a cipher key
-def getCipherKey():
-    shiftAmount = input("Please enter a key (whole number from 1-25): ")
-    return shiftAmount
-
-# Encrypt message
-def encryptMessage(message, cipherKey, alphabet):
-    encryptedMessage = ""
-    uppercaseMessage = ""
-    uppercaseMessage = message.upper()
-    for currentCharacter in uppercaseMessage:
-        position = alphabet.find(currentCharacter)
-        newPosition = position + cipherKey
-        if currentCharacter in alphabet:
-            encryptedMessage = encryptedMessage + alphabet[newPosition]
-        else:
-            encryptedMessage = encryptedMessage + currentCharacter
-    return encryptedMessage
-
-# Decrypt message
-def decryptMessage(message, cipherKey, alphabet):
-    decryptKey = -1 * int(cipherKey)
-    return encryptMessage(message, decryptKey, alphabet)
-
-# Main program logic
-def runCaesarCipherProgram():
-    myAlphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    print(f'Alphabet: {myAlphabet}')
-    myAlphabet2 = getDoubleAlphabet(myAlphabet)
-    print(f'Alphabet2: {myAlphabet2}')
-    myMessage = getMessage()
-    print(myMessage)
-    myCipherKey = getCipherKey()
-    print(myCipherKey)
-    myEncryptedMessage = encryptMessage(myMessage, myCipherKey, myAlphabet2)
-    print(f'Encrypted Message: {myEncryptedMessage}')
-    myDecryptedMessage = decryptMessage(myEncryptedMessage, myCipherKey, myAlphabet2)
-    print(f'Decrypted Message: {myDecryptedMessage}')
-
-# Main logic
-runCaesarCipherProgram()
-```
-
-## correccion 
-
-```.py 
-# Module Lab: Caesar Cipher Program Bug #1
-#
-# In a previous lab, you created a Caesar cipher program. This version of
-# the program is buggy. Use a debugger to find the bug and fix it.
-
-# Double the given alphabet
-def getDoubleAlphabet(alphabet):
-    doubleAlphabet = alphabet + alphabet
-    return doubleAlphabet
-
-# Get a message to encrypt
-def getMessage():
-    stringToEncrypt = input("Please enter a message to encrypt: ")
-    return stringToEncrypt
-
-# Get a cipher key
-def getCipherKey():
-    shiftAmount = input("Please enter a key (whole number from 1-25): ")
-    return shiftAmount
-
-# Encrypt message
-def encryptMessage(message, cipherKey, alphabet):
-    encryptedMessage = ""
-    uppercaseMessage = ""
-    uppercaseMessage = message.upper()
-    for currentCharacter in uppercaseMessage:
-        position = alphabet.find(currentCharacter)
-        newPosition = position + int(cipherKey)
-        if currentCharacter in alphabet:
-            encryptedMessage = encryptedMessage + alphabet[newPosition]
-        else:
-            encryptedMessage = encryptedMessage + currentCharacter
-    return encryptedMessage
-
-# Decrypt message
-def decryptMessage(message, cipherKey, alphabet):
-    decryptKey = -1 * int(cipherKey)
-    return encryptMessage(message, decryptKey, alphabet)
-
-# Main program logic
-def runCaesarCipherProgram():
-    myAlphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    print(f'Alphabet: {myAlphabet}')
-    myAlphabet2 = getDoubleAlphabet(myAlphabet)
-    print(f'Alphabet2: {myAlphabet2}')
-    myMessage = getMessage()
-    print(myMessage)
-    myCipherKey = getCipherKey()
-    print(myCipherKey)
-    myEncryptedMessage = encryptMessage(myMessage, myCipherKey, myAlphabet2)
-    print(f'Encrypted Message: {myEncryptedMessage}')
-    myDecryptedMessage = decryptMessage(myEncryptedMessage, myCipherKey, myAlphabet2)
-    print(f'Decrypted Message: {myDecryptedMessage}')
-
-# Main logic
-runCaesarCipherProgram()
-```
 
 # DevOps e integración continua 
 [Link](https://awsrestart.vitalsource.com/reader/books/PROGDEVOPSCONTINTEGRATION310ES/pageid/0)
@@ -972,36 +693,4 @@ Debido a que el acceso se registra, es posible saber :
 - La infrastructura es una diciplina para garantizar le objetivo de los proyectos 
 
 ![image](https://user-images.githubusercontent.com/42829215/169558757-f1e08b1a-c625-4724-9e7e-a4e558a3b2de.png)
-
-# Labortario desafios Script python 
-[Link](https://awsrestart.instructure.com/courses/866/modules/items/385544)
-
-## utilizados Comandos
-
-Creamos una carpteta para alojar el script de python y el archivo .txt, por lo que usamos mkdir el cual nos crea una carpeta
-
-```.sh
-mkdir script_python
-``` 
-
-Posteriormente utilizamos el comando touch para crear un archivo .py, en el cual crearemos el Script de python.
-
-```.sh 
-touch myScriptPython.py
-```
-
-para poder editarlo podemos configurar los permisos con el comando chmod tambien podemos ver los permisos utilizando el comando ls - la.
-
-```.sh 
-ls -la 
-chmod 777 myScriptPytho.py
-ls -la
-```
-
-Nos fijandonos que tenga los permisos de escrituta y ejecutar podemos abrir el myScriptPython para comenzar a desarrollar el script de python, para ello podemos abrirlo con el editor de vim o nano
-
-```.sh
-vim myScriptPython.py
-```
-
 
