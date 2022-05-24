@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/42829215/170100593-36df8862-29e2-4ad8-9353-44d28acc53c0.png)
 
 # Instruccion INSERT INTO
 Esta instruccion es fundamental para rellenar una tabla de base de datos con datos
