@@ -1,3 +1,7 @@
+- [Instalación de la base de datos “pub1”]()
+- [ Inicio de un proyecto de base de datos]()
+- [Creacion de tablas]()
+
 # Laboratorio 0: Instalación de la base de datos “pub1”
 [Link](https://awsrestart.instructure.com/courses/866/modules/items/385556)
 
@@ -46,4 +50,40 @@ Identifique y documente la información necesaria de cada origen de datos para r
 Documente los requisitos de datos de los informes de ventas y la programación de las presentaciones.
 
 
+# Laboratorio 2: Creación de tablas y tipos de datos
 
+## Escenario
+Está creando una base de datos para llevar el seguimiento de las ventas y el inventario de la tienda Canal House Books, la cual vende libros y otros productos. Canal House tiene una cafetería contigua que vende café y comida. También organiza eventos, como presentaciones musicales, firmas de libros, espectáculos de arte y lecturas de poesía. Los tipos de datos son necesarios a la hora de proporcionar métodos y cálculos adicionales para mejorar la vista actual. Por ejemplo, es posible que le resulte difícil multiplicar dos números si estos están representados por un tipo de dato como un texto (string) o un carácter.
+
+## Objetivo
+En este laboratorio, realizará lo siguiente:
+
+Practicar la identificación de tipos de datos y sus límites, y la capacidad de fusionar valores usando datos de ejemplo
+
+## Ejercicio 1: Actualización del modelo para incluir tipos de datos
+A fin de establecer un plan de diseño sólido para la base de datos, es importante comprender cómo debe representarse cada tipo de dato. Esta información puede conocerse a partir del estado final necesario de los datos. ¿Necesita realizar operaciones matemáticas en los datos? ¿Es necesario manipularlos en tránsito o solo existen requisitos de almacenamiento y búsqueda?
+
+# TAREA
+- Para cada columna de la siguiente tabla, identifique el tipo de dato, sus valores mínimos y máximos, y si los datos se pueden combinar con los datos de otra columna.
+- Complete la tabla de recursos en la siguiente página con sus respuestas
+
+***Nota: Los valores máximo y mínimo deben ser estimados únicamente a partir de los valores disponibles en la tabla de datos.***
+
+![image](https://user-images.githubusercontent.com/42829215/170057105-be702f37-99be-4877-b2e2-7c176160f217.png)
+
+### Buenas practicas  
+- Por lo general la primer fila corresponda a la PK
+- Usamos vachar cuando no sabemos la longitud de la entrada de datos pero si tenemos un aproximado.
+- usamos char cuando conocemos la longitud de la entrada de datos.
+- MySQL proporciona un tipo BOOL como sinónimo de un TINYINT.
+
+![image](https://user-images.githubusercontent.com/42829215/170071574-f7f95bb0-034a-4ad5-8376-7d0821a184c0.png)
+
+
+### Tabla solucion
+- Los datos fusioandos son los que pueden reutilizarse para hacer operaciones con otros datos ya sean matematicas o concatenarlos.
+- Los ID no pueden ser fusionados puesto que se utilizan para buscar informacion o identificar alguna fila, no para utlizarse en operaciones matematicas con otro datos
+
+![image](https://user-images.githubusercontent.com/42829215/170071707-f607284c-4136-430a-98ac-63ea62546cd7.png)
+
+MySQL proporciona un tipo BOOL como sinónimo de un TINYINT.
