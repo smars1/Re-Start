@@ -1,6 +1,7 @@
 - [Instalación de la base de datos “pub1”]()
 - [ Inicio de un proyecto de base de datos]()
 - [Creacion de tablas]()
+- [Laboratorio 3: Introducción de datos]()
 
 # Laboratorio 0: Instalación de la base de datos “pub1”
 [Link](https://awsrestart.instructure.com/courses/866/modules/items/385556)
@@ -87,3 +88,4 @@ A fin de establecer un plan de diseño sólido para la base de datos, es importa
 ![image](https://user-images.githubusercontent.com/42829215/170071707-f607284c-4136-430a-98ac-63ea62546cd7.png)
 
 MySQL proporciona un tipo BOOL como sinónimo de un TINYINT.
+
