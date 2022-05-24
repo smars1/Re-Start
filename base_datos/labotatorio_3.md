@@ -43,6 +43,9 @@ En la esquina inferior derecha de Workbench, haga clic en Apply (Aplicar) para c
 
 Revise la secuencia de comandos SQL para asegurarse de que ha enumerado correctamente las columnas de la tabla y los tipos de datos; a continuación, haga clic en Apply (Aplicar) y cierre el panel.
 
+![image](https://user-images.githubusercontent.com/42829215/170126905-c168c20f-4ff1-4160-b3e0-4fa77b8f51f2.png)
+
+
 En el panel “Schemas” (Esquemas), haga clic con el botón derecho y seleccione la opción del menú Refresh All (Actualizar todo) para completar la tabla nueva.
 
 Haga clic con el botón derecho en la tabla de loyalty (fidelidad) y seleccione la opción Select Rows - Limit 1000 (Seleccionar filas - Límite de 1000).
