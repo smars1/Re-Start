@@ -1,11 +1,12 @@
+# Material de aprendizaje
+- [Aprender sql](https://www.w3schools.com/sql/)
+- [Retos sql](https://www.hackerrank.com/domains/sql)
+
+
 # introduccion a basse de datos 
 
 ![image](https://user-images.githubusercontent.com/42829215/169862656-2ebc8914-e438-4c0b-b9f7-dbb966a76be5.png)
 
-
-## Material de aprendizaje
-- [Aprender sql](https://www.w3schools.com/sql/)
-- [Retos sql](https://www.hackerrank.com/domains/sql)
 
 
 ## Pequeña escala o distribuida
