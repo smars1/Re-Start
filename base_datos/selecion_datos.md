@@ -18,3 +18,32 @@
 
 ![image](https://user-images.githubusercontent.com/42829215/170136385-59a51659-8cd9-4899-9564-99cae334c3af.png)
 
+# Estructura sintanxis SQL
+
+![image](https://user-images.githubusercontent.com/42829215/170283650-e772f811-0b9f-4fc0-9541-5636aafa25c3.png)
+
+![image](https://user-images.githubusercontent.com/42829215/170283799-e1b21cb5-689b-4c19-bbdf-ef8ea5e93913.png)
+
+![image](https://user-images.githubusercontent.com/42829215/170283932-ccfe7d86-9e51-4cf0-b85b-06208ed615c1.png)
+
+![image](https://user-images.githubusercontent.com/42829215/170284089-a82292b3-7827-4fe0-ac1e-2192dbbb8d8c.png)
+
+![image](https://user-images.githubusercontent.com/42829215/170284282-3e123603-f1a1-4344-ae07-a1d09367b8e1.png)
+
+![image](https://user-images.githubusercontent.com/42829215/170284360-a4ab75b3-682a-46e2-af44-c87ed91edae6.png)
+
+# Ejercicio
+![image](https://user-images.githubusercontent.com/42829215/170284647-dd58d2a3-d69b-4600-ad8f-74a51e35e5aa.png)
+
+## Solucion
+
+```SQL
+SELECT retail_price FROM products
+
+```
+
+![image](https://user-images.githubusercontent.com/42829215/170285157-d33ad3f3-3eeb-4dbb-bf22-94b6f05f8b77.png)
+
+
+
+
