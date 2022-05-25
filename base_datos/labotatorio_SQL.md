@@ -3,6 +3,7 @@
 
 - [4 - [DF] - Lab - Selección de datos de una base de datos](https://github.com/smars1/Re-Start/blob/main/base_datos/labotatorio_3.md#4---df---lab---selecci%C3%B3n-de-datos-de-una-base-de-datos)
 - [5 - Laboratorio: Búsquedas con condiciones](https://github.com/smars1/Re-Start/blob/main/base_datos/labotatorio_SQL.md#5---laboratorio-b%C3%BAsquedas-con-condiciones)
+- [Laboratorio 6: Trabajo con funciones]()
 
 ## Información general sobre el laboratorio
 ### Escenario
@@ -233,3 +234,81 @@ La opción del segundo icono de rayo (el del cursor ) depende de la posición ac
 
 ![image](https://user-images.githubusercontent.com/42829215/170325717-7fd83ae2-bc4a-47b9-8220-a1357825cceb.png)
 
+# Laboratorio 6: Trabajo con funciones
+
+Escenario
+El gerente de “Canal House Books” se ha puesto en contacto con usted con algunas solicitudes de información. La primera, necesita una lista de los apellidos y los puntos acumulados de todos los clientes registrados, que usen una dirección de email .gov u .org, que esté ordenada por apellidos en orden ascendente y por sus puntos, en orden descendente. La segunda tarea consiste en proporcionar una lista de todos los libros cuyo nombre sea muy largo.
+
+Objetivos
+En este laboratorio, realizará lo siguiente:
+
+Proporcionar al gerente una lista de los clientes, basada en su email, con los apellidos en orden ascendente; y sus puntos acumulados, en orden descendente
+Proporcionar una lista de todos los títulos cuya longitud es superior a 12 caracteres, en un formato especificado
+Tiempo estimado para finalizar
+Entre 20 y 30 minutos
+
+Ejercicio 1: seleccionar por dirección de email y ordenar.
+El gerente ha solicitado una lista de los clientes registrados cuyas direcciones de email estén basadas en .gov u .org. Proporcione solo los apellidos en orden ascendente y los puntos de fidelidad en orden descendente.
+
+TAREA
+Cree una consulta personalizada para seleccionar los apellidos y puntos de la tabla, mientras los ordena de forma ascendente y descendente respectivamente.
+
+Pasos a seguir
+Asegúrese de estar conectado a la base de datos pub1 desde su MySQL Workbench. Seleccione “Continuar de todas formas” cuando reciba un aviso sobre las versiones no compatibles.
+
+En la sección “Schemas” (Esquemas) del panel de navegación de MySQL Workbench, haga clic con el botón derecho en la tabla loyalty (fidelidad) y seleccione Select Rows - Limit 1000 (Seleccionar filas. Límite 1000). También puede hacer clic en el símbolo de la tabla como se muestra en el diagrama a continuación para obtener los mismos resultados:
+
+![image](https://user-images.githubusercontent.com/42829215/170353900-4c535a47-9574-404c-81da-515dca847cee.png)
+
+Escriba SELECT name FROM pub1.loyalty; en el panel de consulta de la tabla loyalty (fidelidad) para mostrar solo el campo name (nombre). Haga clic en el icono del rayo para realizar la consulta.
+
+Ahora edite la consulta utilizando la función substring_index para seleccionar solo el nombre escribiendo substring_index(name," ", -1). Haga clic en el icono del rayo para ejecutar la consulta.
+
+![image](https://user-images.githubusercontent.com/42829215/170354153-4b35f8c2-1e41-4813-b9fa-98dcb390e388.png)
+
+La función substring_index permite seleccionar un índice, en este caso el -1 que proporciona el último elemento. En la siguiente imagen, solo para este paso, se agrega el nombre para que se muestre primero y último.
+
+Modifique la línea 1 de la consulta para darle un nombre al resultado de la función substring_index como last_name (apellido). Para ello se agrega as last_name luego de la llamada a la función.
+
+Sustituya name (nombre) al final de la línea SELECT por points, email (puntos, email).
+
+A continuación, filtrará los resultados para incluir solo las direcciones de email .gov y .org. Escriba WHERE pub1.loyalty.email LIKE "%.gov" OR pub1.loyalty.email LIKE "%.org".
+
+Edite la consulta para ordenar según last_name (apellido) en orden ascendente y por points (puntos) en orden descendente. Escriba ORDER BY last_name ASC, points DESC al final de la consulta.
+
+Haga clic en el icono del rayo para realizar la consulta.
+
+![image](https://user-images.githubusercontent.com/42829215/170355935-125ce89d-6ef7-49e7-9ed3-5e0b1ad8bcd7.png)
+
+## Ejercicio 2: Seleccionar y mostrar en función de la longitud del título
+La siguiente solicitud del gerente consiste en proporcionar una lista de todos los títulos con una longitud superior a los 12 caracteres. El formato que quiere el gerente es que solo se impriman los primeros 15 caracteres del título. Otro requisito es eliminar los duplicados de la lista final y ordenarla alfabéticamente.
+
+## TAREA
+Usando la tabla de títulos, cree una consulta SELECT para obtener la longitud del título, compruebe si esa longitud es superior a los 12 caracteres e imprima solo los primeros 15.
+
+## Pasos a seguir
+En la sección “Schemas” (Esquemas) del panel de navegación de MySQL Workbench, haga clic con el botón derecho en la tabla titles (títulos) y seleccione la opción Select Rows - Limit 1000 (Seleccionar filas. Límite 1000).
+
+Edite la consulta en el panel de consulta de la tabla titles (títulos) para mostrar solo el bktitle en pub1.titles. Para ello, escriba SELECT bktitle FROM pub1.titles.
+
+Mientras sigue editando la consulta, utilice la función LENGTH (longitud) para filtrar que la longitud del texto del título supere los 12 caracteres. Agregue WHERE LENGTH(TRIM(bktitle)) > 12; al final y haga clic en el rayo para ejecutar la consulta.
+
+ Nota
+
+Es posible que tenga que utilizar la función TRIM para eliminar los espacios en blanco de ambos lados del título, anidados dentro de la función LENGTH, para proporcionar los resultados adecuados.
+
+Utilice SELECT SUBSTRING(bktitle, 1, 15) para editar el selector bktitle a fin de dejar solo los 15 primeros caracteres.
+
+![image](https://user-images.githubusercontent.com/42829215/170357917-96151f65-cb2f-4804-ab07-5c1e73f82c80.png)
+
+
+Por último, edite el resultado del selector bktitle utilizando una función anidada para obtener una lista DISTINCT o única, y ordenar el resultado de forma ascendente. Puede hacerlo editando la consulta de la manera siguiente:
+
+```SQL
+SELECT DISTINCT(SUBSTRING(bktitle, 1, 15)) as "titles" FROM pub1.titles WHERE LENGTH(TRIM(bktitle)) > 12 ORDER BY titles ASC;
+```
+Haga clic en el icono del rayo para realizar la consulta.
+
+## Ejemplo
+
+![image](https://user-images.githubusercontent.com/42829215/170357947-3ce96cfa-4fa7-4dbd-b420-d54746112702.png)
