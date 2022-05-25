@@ -177,7 +177,7 @@ podemos tambien poner mas de una condicional por consulta
 ![image](https://user-images.githubusercontent.com/42829215/170294364-4e082b5b-47f8-42b1-8f3a-007b7527ff8d.png)
 
 
-5 - Laboratorio: Búsquedas con condiciones
+# 5 - Laboratorio: Búsquedas con condiciones
 
 ## Ejercicio 1: Seleccionar los libros por fecha e ignorar palabras especificadas
 El equipo de ventas ha solicitado una lista de todos los libros publicados entre los años 2012 y 2017. Una de las condiciones propuestas por el cliente es ignorar las palabras “play” (jugar), “repair” (reparar) y “build” (construir) en la búsqueda.
