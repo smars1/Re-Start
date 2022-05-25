@@ -236,10 +236,10 @@ La opción del segundo icono de rayo (el del cursor ) depende de la posición ac
 
 # Laboratorio 6: Trabajo con funciones
 
-Escenario
+## Escenario
 El gerente de “Canal House Books” se ha puesto en contacto con usted con algunas solicitudes de información. La primera, necesita una lista de los apellidos y los puntos acumulados de todos los clientes registrados, que usen una dirección de email .gov u .org, que esté ordenada por apellidos en orden ascendente y por sus puntos, en orden descendente. La segunda tarea consiste en proporcionar una lista de todos los libros cuyo nombre sea muy largo.
 
-Objetivos
+## Objetivos
 En este laboratorio, realizará lo siguiente:
 
 Proporcionar al gerente una lista de los clientes, basada en su email, con los apellidos en orden ascendente; y sus puntos acumulados, en orden descendente
@@ -247,13 +247,13 @@ Proporcionar una lista de todos los títulos cuya longitud es superior a 12 cara
 Tiempo estimado para finalizar
 Entre 20 y 30 minutos
 
-Ejercicio 1: seleccionar por dirección de email y ordenar.
+## Ejercicio 1: seleccionar por dirección de email y ordenar.
 El gerente ha solicitado una lista de los clientes registrados cuyas direcciones de email estén basadas en .gov u .org. Proporcione solo los apellidos en orden ascendente y los puntos de fidelidad en orden descendente.
 
-TAREA
+## TAREA
 Cree una consulta personalizada para seleccionar los apellidos y puntos de la tabla, mientras los ordena de forma ascendente y descendente respectivamente.
 
-Pasos a seguir
+## Pasos a seguir
 Asegúrese de estar conectado a la base de datos pub1 desde su MySQL Workbench. Seleccione “Continuar de todas formas” cuando reciba un aviso sobre las versiones no compatibles.
 
 En la sección “Schemas” (Esquemas) del panel de navegación de MySQL Workbench, haga clic con el botón derecho en la tabla loyalty (fidelidad) y seleccione Select Rows - Limit 1000 (Seleccionar filas. Límite 1000). También puede hacer clic en el símbolo de la tabla como se muestra en el diagrama a continuación para obtener los mismos resultados:
