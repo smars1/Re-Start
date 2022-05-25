@@ -2,6 +2,7 @@
 
 
 - [4 - [DF] - Lab - Selección de datos de una base de datos](https://github.com/smars1/Re-Start/blob/main/base_datos/labotatorio_3.md#4---df---lab---selecci%C3%B3n-de-datos-de-una-base-de-datos)
+- [5 - Laboratorio: Búsquedas con condiciones]()
 
 ## Información general sobre el laboratorio
 ### Escenario
@@ -176,4 +177,59 @@ podemos tambien poner mas de una condicional por consulta
 ![image](https://user-images.githubusercontent.com/42829215/170294364-4e082b5b-47f8-42b1-8f3a-007b7527ff8d.png)
 
 
+5 - Laboratorio: Búsquedas con condiciones
+
+## Ejercicio 1: Seleccionar los libros por fecha e ignorar palabras especificadas
+El equipo de ventas ha solicitado una lista de todos los libros publicados entre los años 2012 y 2017. Una de las condiciones propuestas por el cliente es ignorar las palabras “play” (jugar), “repair” (reparar) y “build” (construir) en la búsqueda.
+
+## TAREA
+Cree una consulta SELECT que no distinga entre mayúsculas y minúsculas, y dé como resultado los libros publicados entre los años 2012 y 2017 que no contengan las palabras “play” (jugar), “repair” (reparar) o “build” (construir) en sus títulos.
+
+## Pasos a seguir
+En el panel de esquema de Workbench, haga clic con el botón derecho en la tabla titles (títulos) y seleccione Select Rows = Limit 1000 (Seleccionar filas. Límite 1000).
+
+Escriba SELECT partnum, bktitle, slprice, pubdate FROM pub1.titles para obtener solo dichas columnas de la tabla pub1.titles.
+
+Una vez seleccionadas las columnas adecuadas, escriba WHERE. Presione INTRO y escriba (pubdate between "2012-01-01" AND "2017-12-30") para filtrar los libros publicados entre esas fechas.
+
+Escriba AND. Presione INTRO. A continuación, para filtrar libros según las palabras clave especificadas, escriba:
+
+```SQL
+(lower(bktitle) NOT LIKE "%repair%" AND lower(bktitle) NOT LIKE "%play%" AND lower(bktitle) NOT LIKE "%build%");
+```
+Consulta completa 
+
+```SQL
+
+```
+
+Haga clic en el icono del rayo para realizar la consulta.
+
+![image](https://user-images.githubusercontent.com/42829215/170320386-3c29652a-957e-428a-8d83-66c542e31fd6.png)
+
+## Ejercicio 2: Suma total de ventas por código de artículo
+Tras proporcionar la lista, el equipo de ventas usará tres libros como prueba. Consulte la tabla de ventas para ver el total vendido de cada uno de los tres libros principales mediante los códigos de artículo.
+
+## TAREA
+Con la tabla de ventas, cree una consulta ```SELECT``` que sume la cantidad total vendida mediante el código de artículo.
+
+## Pasos a seguir
+En la sección “Schemas” (Esquemas) del panel de navegación de MySQL Workbench, haga clic con el botón derecho en la tabla de sales (ventas) y seleccione Select Rows - Limit 1000 (Seleccionar filas. Límite 1000).
+
+Escriba ```SELECT SUM(qty) FROM pub1.sales``` para mostrar solo la suma de la columna qty en la tabla pub1.sales.
+
+Agregue a la consulta ```WHERE partnum = "40121";``` para filtrar la columna partnum (código de artículo).
+
+Repita esta consulta para los otros códigos de artículo (40125 y 40325) que se muestran en la siguiente imagen. De este modo, proporcionará al equipo de ventas los tres primeros libros disponibles en sus datos.
+
+ Nota
+
+Es posible que el partnum (código de artículo) de un libro no aparezca en la tabla de ventas; en tal caso, continúe con el siguiente partnum (código de artículo).
+
+Haga clic en el icono del rayo (el segundo, el que tiene un cursor) para ejecutar cada instrucción individualmente y proporcionar la suma de la cantidad vendida para los tres códigos de artículo diferentes.
+ Nota
+
+La opción del segundo icono de rayo (el del cursor ) depende de la posición actual del cursor del usuario. Por lo tanto, en la imagen siguiente, solo se ejecutaría la consulta que hay en la línea 1.
+
+![image](https://user-images.githubusercontent.com/42829215/170325717-7fd83ae2-bc4a-47b9-8220-a1357825cceb.png)
 
