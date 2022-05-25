@@ -3,7 +3,7 @@
 
 - [4 - [DF] - Lab - Selección de datos de una base de datos](https://github.com/smars1/Re-Start/blob/main/base_datos/labotatorio_3.md#4---df---lab---selecci%C3%B3n-de-datos-de-una-base-de-datos)
 - [5 - Laboratorio: Búsquedas con condiciones](https://github.com/smars1/Re-Start/blob/main/base_datos/labotatorio_SQL.md#5---laboratorio-b%C3%BAsquedas-con-condiciones)
-- [Laboratorio 6: Trabajo con funciones]()
+- [Laboratorio 6: Trabajo con funciones](https://github.com/smars1/Re-Start/blob/main/base_datos/labotatorio_SQL.md#laboratorio-6-trabajo-con-funciones)
 
 ## Información general sobre el laboratorio
 ### Escenario
