@@ -4,6 +4,7 @@
 - [4 - [DF] - Lab - Selección de datos de una base de datos](https://github.com/smars1/Re-Start/blob/main/base_datos/labotatorio_3.md#4---df---lab---selecci%C3%B3n-de-datos-de-una-base-de-datos)
 - [5 - Laboratorio: Búsquedas con condiciones](https://github.com/smars1/Re-Start/blob/main/base_datos/labotatorio_SQL.md#5---laboratorio-b%C3%BAsquedas-con-condiciones)
 - [Laboratorio 6: Trabajo con funciones](https://github.com/smars1/Re-Start/blob/main/base_datos/labotatorio_SQL.md#laboratorio-6-trabajo-con-funciones)
+- [Laboratorio 7: Organización de los datos]()
 
 ## Información general sobre el laboratorio
 ### Escenario
@@ -312,3 +313,68 @@ Haga clic en el icono del rayo para realizar la consulta.
 ## Ejemplo
 
 ![image](https://user-images.githubusercontent.com/42829215/170357947-3ce96cfa-4fa7-4dbd-b420-d54746112702.png)
+
+
+Información general sobre el laboratorio
+Escenario
+El departamento de ventas ha acudido una vez más a usted para solicitarle más información. Les gustaría dirigirse a los clientes que gastan más dinero en una única compra, en función del mes de dicha compra. Desearían comercializar a estos clientes los 20 libros más caros que contengan tres palabras o más en su título. Aportaron un informe que mostraba que esto había funcionado muy bien en otras tiendas. Compruebe si puede implementar la investigación de mercado que el equipo de ventas está buscando.
+
+Objetivos
+En este laboratorio, realizará lo siguiente:
+
+Clasificar cada compra según la cantidad vendida y el mes en que se vendió el producto
+Seleccionar los 20 libros más caros que contengan tres palabras en su título
+Tiempo estimado para finalizar
+Entre 10 y 20 minutos
+
+Ejercicio 1: Clasificación de las compras según la cantidad vendida y el mes
+Para poder proporcionar la información que necesita el equipo de ventas, debe crear una lista de los clientes que gastan la mayor cantidad de dinero en una única compra. Clasifique las compras en función de la cantidad vendida por el mes en el que se vendieron.
+
+TAREA
+Clasifique cada compra realizada en función de la cantidad vendida por mes. Cree una lista con los códigos de cliente para el equipo de ventas.
+
+Pasos a seguir
+Asegúrese de haber iniciado sesión en el WorkSpace, de que MySQL Workbench esté abierto y de estar conectado a la base de datos “pub1”.
+
+En la sección “Schemas” (Esquemas) del panel de navegación de MySQL Workbench, haga clic con el botón derecho en la tabla “sales” (ventas) y seleccione la opción Select Rows - Limit 1000 (Seleccionar filas. Límite 1000).
+
+Edite la consulta en el panel de consulta de la tabla sales (ventas) escribiendo SELECT sldate, partnum, qty, custnum,.
+
+Una vez seleccionadas las columnas adecuadas, utilice RANK() para crear una nueva columna denominada quantity_rank (rango de cantidad). Se ordenará por qty (cant.) y se agrupará según el nombre del mes de la fecha que figure en la columna sldate (fecha de vta.). Para ello, escriba la siguiente consulta:
+
+ SELECT 
+ sldate, partnum, qty, custnum, 
+ RANK() OVER (PARTITION by MONTHNAME(sldate) ORDER BY qty DESC) quantity_rank
+ FROM pub1.sales ORDER BY quantity_rank;
+ 
+![image](https://user-images.githubusercontent.com/42829215/170505641-d82d86a4-2ffe-4c73-90dd-8c0205dc2324.png)
+ 
+ 
+ Ejercicio 2: Selección de los libros más vendidos filtrados por la longitud de su título
+Ahora que el equipo de ventas tiene una lista de los principales clientes que más gastan en una única compra por mes, ha llegado el momento de proporcionarles la información de marketing restante. Diseñe una consulta para seleccionar los veinte libros más caros que tengan al menos tres palabras en su título.
+
+TAREA
+Con la tabla titles (títulos), cree una consulta SELECT con el fin de identificar los veinte libros principales por precio de venta que contengan al menos tres palabras en su título.
+
+Pasos a seguir
+En el panel “Schema” (Esquema) de Workbench, haga clic con el botón derecho en la tabla titles (títulos) y seleccione Select Rows (Seleccionar filas).
+
+En el panel de consulta de la tabla titles (títulos), escriba SELECT partnum, bktitle, slprice FROM pub1.titles
+
+Una vez seleccionadas las columnas, agregue WHERE bktitle LIKE "% % %" para seleccionar los títulos de libros que tengan al menos 3 palabras en el título.
+
+ Nota
+
+El uso de una combinación de comodines y espacios puede proporcionar un enfoque excelente, pero no perfecto, para buscar palabras en cadenas.
+
+Edite la tabla a fin de ordenar las columnas por precio de venta en orden descendente y limitarlas a los 20 elementos principales agregando ORDER BY slprice DESC LIMIT 20; al final de la consulta.
+
+Haga clic en el icono del rayo para realizar la consulta.
+
+![image](https://user-images.githubusercontent.com/42829215/170509030-37d14872-b6b0-4e24-99ca-011c8553a8a2.png)
+
+ 
+ 
+ 
+ 
+ 
