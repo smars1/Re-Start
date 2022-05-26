@@ -315,6 +315,8 @@ Haga clic en el icono del rayo para realizar la consulta.
 ![image](https://user-images.githubusercontent.com/42829215/170357947-3ce96cfa-4fa7-4dbd-b420-d54746112702.png)
 
 
+# [Laboratorio 7: Organización de los datos
+
 Información general sobre el laboratorio
 Escenario
 El departamento de ventas ha acudido una vez más a usted para solicitarle más información. Les gustaría dirigirse a los clientes que gastan más dinero en una única compra, en función del mes de dicha compra. Desearían comercializar a estos clientes los 20 libros más caros que contengan tres palabras o más en su título. Aportaron un informe que mostraba que esto había funcionado muy bien en otras tiendas. Compruebe si puede implementar la investigación de mercado que el equipo de ventas está buscando.
@@ -373,8 +375,55 @@ Haga clic en el icono del rayo para realizar la consulta.
 
 ![image](https://user-images.githubusercontent.com/42829215/170509030-37d14872-b6b0-4e24-99ca-011c8553a8a2.png)
 
+ # LAB - 7 - Laboratorio: Actualización y eliminación de tablas
  
+ Información general sobre el laboratorio
+Escenario
+El gerente de Canal House Books necesita borrar algunos libros de la tabla titles (títulos), ya que han superado el tiempo en la estantería desde su fecha de publicación. Ahora se trata de crear una transacción que seleccionará todos los títulos actuales que tengan más de 32 meses y los insertará en la tabla obsolete (obsoletos). Finalmente, se eliminarán de la tabla titles (títulos) actual.
+
+Objetivos
+En este laboratorio, realizará lo siguiente:
+
+Crear una transacción que borre los libros de la tabla titles (títulos) que tengan más de 32 meses, y los inserte en la tabla obsolete (obsoleto).
+Crear una consulta para eliminar la tabla inventory (inventario) de la base de datos
  
- 
- 
- 
+ Ejercicio 1: Movimiento de títulos a una tabla obsoleta
+En la industria editorial, a menos que sea un título increíblemente popular, el libro permanece en los estantes durante un tiempo limitado. El gerente de Canal House Books necesita una transacción para limitar qué libros se dejan en las estanterías. Cree una transacción para eliminar los títulos de la tabla titles (títulos) que lleven más de 32 meses y los inserte en la tabla obsolete (obsoleto).
+
+TAREA
+Cree una transacción para extraer los títulos antiguos e insertarlos en la tabla obsolete (obsoleto).
+
+Pasos a seguir
+Asegúrese de haber iniciado sesión en el WorkSpace, de que MySQL Workbench esté abierto y de estar conectado a la base de datos “pub1”.
+Escriba *SELECT FROM pub1.titles WHERE pubdate < DATE_SUB(NOW(), INTERVAL 33 MONTH); para identificar todos los libros de la tabla titles** (títulos) que tengan más de 32 meses a partir de la fecha de hoy. Ejecute la instrucción mediante un clic en el icono del rayo.
+ Nota
+
+La función DATE_SUB resta el intervalo de la fecha actual, por lo que se utilizan 33 meses para obtener el marco temporal adecuado.
+
+![image](https://user-images.githubusercontent.com/42829215/170573016-55d856b8-ac72-4b66-a2b2-fa124c66e7e3.png)
+
+Cree una transacción para seleccionar estos datos e insertarlos en la tabla obsolete (obsoleto). A continuación, escribaSTART TRANSACTION; INSERT INTO pub1.obsolete_titles al inicio de la consulta anterior y COMMIT al final para eliminarlos de la tabla titles.
+Escriba SQL_SAFE_UPDATES=0 justo después de la línea START TRANSACTION; para permitir la eliminación de filas en función de la fecha de publicación y escriba SET SQL_SAFE_UPDATES = 1; en la línea anterior a COMMIT; para volver a establecer el parámetro a 1.
+ Nota
+
+El parámetro SQL_SAFE_UPDATES debe desactivarse y reactivarse de nuevo, dentro de la transacción. Debe usarse cuando no se especifica una clave principal al realizar un borrado.
+
+Haga clic en el icono del rayo para realizar la transacción.
+Ejemplo
+
+![image](https://user-images.githubusercontent.com/42829215/170573061-9b849a53-f9b3-4d0c-83cc-5606888cf3de.png)
+
+Ejercicio 2: eliminar una tabla de la base de datos
+El gerente se ha puesto en contacto con usted y le ha informado de que ya no es necesario utilizar la tabla de inventory (inventario) obsoleta que se proporcionó anteriormente y le pide que la elimine de la base de datos. Cree una consulta que elimine la tabla de la base de datos.
+
+TAREA
+Cree una consulta para eliminar la tabla Inventory (inventario) de la base de datos pub1.
+
+Pasos a seguir
+En el panel «Schema» (esquema), haga clic con el botón derecho en la tabla inventory (inventario) y seleccione la opción Select Rows – Limit 1000 (Seleccionar filas. Límite de 1000).
+Edite la consulta en el panel de consultas de la tabla inventory (inventario) para eliminar, si existe, la tabla pub1.inventory. Para ello, escriba DROP TABLE IF EXISTS pub1.inventory;.
+Haga clic en el icono del rayo para ejecutar la consulta y eliminar la tabla.
+Ejemplo
+
+![image](https://user-images.githubusercontent.com/42829215/170573101-17bb8dd3-6d73-4c7c-ac6b-bd9780dcf84c.png)
+
