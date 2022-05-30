@@ -228,6 +228,10 @@ Agregue, edite y elimine contactos para probar la aplicación web.
 
 
 
+- Usuario maestro: admin
+- Master password: 12345678
+- indentificador : database-1ad
+- nombre de base : my_db 
 
 
 
