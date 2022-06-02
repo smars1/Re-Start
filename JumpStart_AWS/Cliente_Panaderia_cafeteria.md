@@ -84,4 +84,11 @@ Tiene nociones de programacion y se a enterado de los servicios de AWS.
 
 
 
-
+utilice el grep para filtrar la politica y conocer el ARN sin necesidad de ir a la consola 
+```.sh
+aws iam list-policies | grep lab_policy
+```
+ahí si el comando 
+```sh
+aws iam get-policy --policy-arn arn:aws:iam::874260908800:policy/lab_policy > lab_policy.json
+```
