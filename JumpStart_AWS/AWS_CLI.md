@@ -1,9 +1,9 @@
 # Herramientas de comando
 - [interfaz de linea de comandos de AWS (AWS CLI)]()
-- [PowerShell]()
+- [PowerShell](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS_CLI.md#powershell)
   - [link](https://awsrestart.vitalsource.com/reader/books/JWADMINDEVTOOLS35ES/pageid/1) 
-- [AWS CloudFormation]() 
-- [AWS OpsWork]()
+- [AWS CloudFormation](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS_CLI.md#aws-cloudformation) 
+- [AWS OpsWork](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS_CLI.md#aws-opswork)
 
 # interfaz de linea de comandos de AWS (AWS CLI)
 
