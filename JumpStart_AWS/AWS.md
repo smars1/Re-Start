@@ -3,7 +3,9 @@
   - [Link](https://awsrestart.instructure.com/courses/866/modules/items/385610)
 - [System Manager](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#system-manager)
   - [Link](https://awsrestart.vitalsource.com/reader/books/JWAWSSYSTEMSMANAGER35ES/pageid/0) 
-
+- [AWS S3: Alojamiento de un sitio web estatico]()
+  - [Practica-LAB-S3-Creacion de un sitio web estatico]()
+    - [link](https://awsrestart.instructure.com/courses/866/modules/items/385623) 
 
 ## AWS Identity and access management (IAM) 
 
@@ -96,4 +98,43 @@ IAM oermite administrar de forma centralizada la autentificacion y el acces de r
 
 ![image](https://user-images.githubusercontent.com/42829215/171882162-dd538a19-ffc6-4fbd-9459-071c58f58653.png)
 
+
+# AWS S3: Alojamiento de un sitio web estatico
+- [link](https://awsrestart.vitalsource.com/reader/books/JWHOSTSTATICWEBSITE35ES/pageid/2)
+  - [Herramientas de automatizacion para el cafe](https://awsrestart.vitalsource.com/reader/books/JWCAFEWEBSITES335ES/pageid/0)
+Recordar que S3 es una almacenamiento de objetos, al cual se le pueden dar muchos usos practicos, como alojamientos de pagianas web, tambien podemos almacenar casi cualquier tipo de dato. En un sitio web estatico se trabajan con lenguajes sencillos como html, css, JavaScritp. Por el contrario un sitio web dinamico depende del procesamiento del lado del servidor donde se incluyen lenguajes como php, JSP, ASP.NET 
+
+![image](https://user-images.githubusercontent.com/42829215/171941712-caadbe0d-8e0f-4a5b-ae6e-f1223679dbe5.png)
+![image](https://user-images.githubusercontent.com/42829215/171942665-9ae0a96a-94ac-4ad4-b31c-1247fc3a9bdb.png)
+![image](https://user-images.githubusercontent.com/42829215/171944263-7e14ed55-f1d4-4bb7-89ea-bc72fdcf7799.png)
+
+![image](https://user-images.githubusercontent.com/42829215/171944371-e0953eae-c131-457a-9889-078c8afb00f6.png)
+![image](https://user-images.githubusercontent.com/42829215/171948138-85115568-1344-403f-9a2c-0d426c737a0e.png)
+![image](https://user-images.githubusercontent.com/42829215/171948151-5bc0b516-1255-445f-88ad-2ed3a987c1fb.png)
+![image](https://user-images.githubusercontent.com/42829215/171948200-7b42087f-35d3-4431-bab7-8177baab0131.png)
+
+# Practica-LAB-S3-Creacion de un sitio web estatica
+  - [link](https://awsrestart.instructure.com/courses/866/modules/items/385623) 
+
+## Actividad: Crear un sitio web en S3
+Información general sobre la actividad
+En esta actividad, practicará el uso de la AWS Command Line Interface (AWS CLI) para:
+
+- Crear un bucket de Amazon Simple Storage Service (Amazon S3).
+- Crear un nuevo usuario de AWS Identity and Access Management (IAM) que tenga acceso total a Amazon S3.
+- Cargar archivos a Amazon S3 a fin de alojar un sitio web simple para la cafetería y panadería.
+- Crear un archivo por lotes que se pueda utilizar para actualizar el sitio web estático cuando cambie cualquier archivo del sitio web de manera local.
+- Una vez que haya completado la actividad, los clientes podrán acceder al sitio web que ha implementado en Amazon S3, como se muestra en este diagrama.
+
+![image](https://user-images.githubusercontent.com/42829215/171949876-ca6327d2-e90b-4400-9072-3122afd99b89.png)
+
+### Creando un usuario nuevo IAM
+```.sh
+aws iam create-user --user-name awsS3user
+```
+Dentro de ```vim``` podemos usar ```ESQ```  ```/name-busqueda``` esto subraya palabra escrita 
+### ejecutar un archivo
+```.sh
+./update-website.sh
+```
 
