@@ -1,3 +1,10 @@
+# Herramientas de comando
+- [interfaz de linea de comandos de AWS (AWS CLI)]()
+- [PowerShell]()
+  - [link](https://awsrestart.vitalsource.com/reader/books/JWADMINDEVTOOLS35ES/pageid/1) 
+- [AWS CloudFormation]() 
+- [AWS OpsWork]()
+
 # interfaz de linea de comandos de AWS (AWS CLI)
 
 ![image](https://user-images.githubusercontent.com/42829215/171681227-9e24bf30-4b36-40f3-87b0-2cccd08b4871.png)
@@ -60,3 +67,50 @@
 # Aprendizajes clave
 ![image](https://user-images.githubusercontent.com/42829215/171697305-0f7ff6ed-8eff-4d3b-bb3b-f9ca0471713b.png)
 
+# PowerShell
+![image](https://user-images.githubusercontent.com/42829215/171915503-d6714e9b-fbc9-4f95-99d9-130c19db4bb8.png)
+![image](https://user-images.githubusercontent.com/42829215/171915665-162a4247-b612-4331-8e04-b8fa26a0609d.png)
+![image](https://user-images.githubusercontent.com/42829215/171915878-f8b799be-6cc9-4b4d-875d-8113018fa5ab.png)
+
+## Ejemplo de comando PowerShell: Lanzamiento de una instancia EC2
+
+![image](https://user-images.githubusercontent.com/42829215/171916070-231c152e-1769-4928-9005-2dd467bb2d0e.png)
+
+## Ejemplo de Comando: Mostrar los detalles de EC2 filtrados en el ID  de reserva
+![image](https://user-images.githubusercontent.com/42829215/171916263-03c24d2a-ef1b-48ec-b34f-55f5b55db5ac.png)
+
+## Comando de ejemplo de PowerShell para crear un S3 bucket 
+
+![image](https://user-images.githubusercontent.com/42829215/171916531-6179a857-f734-436e-82a5-e8319f23f8d0.png)
+
+## Ejemplo de comando de PowerShell: Creacion de un grupo de IAM
+
+![image](https://user-images.githubusercontent.com/42829215/171917582-b62b9035-430a-4f0d-9f52-e10edb28a3d0.png)
+
+## Ejemplo de comando: Crear un usuario IAM
+
+![image](https://user-images.githubusercontent.com/42829215/171917740-1eacc29e-a6c4-464c-a6e9-91b25f18bf33.png)
+
+## Ejemplo de comando: Agregar un usuario IAM a un grupo
+
+![image](https://user-images.githubusercontent.com/42829215/171917897-16c2b5ec-033b-41f7-b1b2-24ae30aeff23.png)
+
+![image](https://user-images.githubusercontent.com/42829215/171918063-aa9ed8d5-177a-4a9f-9845-53365d1eb03d.png)
+![image](https://user-images.githubusercontent.com/42829215/171918084-0d28317a-89da-435e-87ab-6545274dbd33.png)
+
+# AWS CloudFormation 
+
+Es un servicio nativo de nube que nos permite administrar los servicios de AWS, permite aprovisionar una nube dándole instrucciones  de como formar su red interna, externa; qué recursos activar(EC2,EC3)..etc..
+ 
+
+![image](https://user-images.githubusercontent.com/42829215/171918549-e9aec1ba-54c6-431f-8710-059954fa0ee5.png)
+![image](https://user-images.githubusercontent.com/42829215/171918619-a2d9bd0d-9c35-4df1-b7ca-e88acc22946b.png)
+![image](https://user-images.githubusercontent.com/42829215/171919258-6f92ee55-848d-4257-8140-bb8a2a18aab8.png)
+
+# AWS OpsWork
+
+![image](https://user-images.githubusercontent.com/42829215/171921533-c1740805-c274-47a7-88ba-99d11e653322.png)
+
+![image](https://user-images.githubusercontent.com/42829215/171921584-9e9b3588-87c1-4446-91d9-6d2d381e3f11.png)
+
+![image](https://user-images.githubusercontent.com/42829215/171921650-ce50a50a-21c6-44ce-be91-eddcd2985d9b.png)
