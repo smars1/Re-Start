@@ -163,18 +163,21 @@ Se abrirá una ventana de sesión en su navegador.
 Haga clic en la sesión para activar el cursor.
 
 Ejecute este comando en la ventana de sesión:
-
+  
+```.sh
 ls /var/www/html
+```
 Verá los archivos de la aplicación que se instalaron en la instancia.
 
 Ejecute este comando en la ventana de sesión:
 
+```.sh
 # Get region
 AZ=`curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone`
 export AWS_DEFAULT_REGION=${AZ::-1}
-
 # List information about EC2 instances
 aws ec2 describe-instances
+```
 Esto demuestra cómo se puede utilizar AWS Systems Manager Session Manager para iniciar sesión en una instancia sin utilizar SSH. De hecho, esta instancia no tiene un puerto 22 de SSH abierto en su grupo de seguridad.
 Opcional: puede verificar lo anterior al buscar el grupo de seguridad que utilizó la instancia.
 
