@@ -1,6 +1,9 @@
 # Amazon Web Service
 - [IAM]()
-  - [link](https://awsrestart.instructure.com/courses/866/modules/items/385610)
+  - [Link](https://awsrestart.instructure.com/courses/866/modules/items/385610)
+- [System Manager]()
+  - [Link](https://awsrestart.vitalsource.com/reader/books/JWAWSSYSTEMSMANAGER35ES/pageid/0) 
+
 
 ## AWS Identity and access management (IAM) 
 
@@ -57,18 +60,40 @@ IAM oermite administrar de forma centralizada la autentificacion y el acces de r
 
 ![image](https://user-images.githubusercontent.com/42829215/171674981-6c98d7ad-0ac6-46c4-be36-a076fa9508bd.png)
 
+# System Manager
 
+![image](https://user-images.githubusercontent.com/42829215/171879245-80836c1d-6ada-4529-97d3-894f11e5d821.png)
+![image](https://user-images.githubusercontent.com/42829215/171879273-ef34670a-1f7e-4ba8-9c17-7981e47a454d.png)
 
+![image](https://user-images.githubusercontent.com/42829215/171879308-d222fd0b-02df-4344-9ede-8d21eb7cc663.png)
+![image](https://user-images.githubusercontent.com/42829215/171879526-f0e0167d-d5a0-4f3c-8cef-c3d2ac224528.png)
+![image](https://user-images.githubusercontent.com/42829215/171879606-150e5c13-932a-49af-baba-8d7df121e7c3.png)
 
+![image](https://user-images.githubusercontent.com/42829215/171879853-accf2b8b-2e51-4857-9994-360d8dbc072d.png)
+![image](https://user-images.githubusercontent.com/42829215/171879925-dd8a8b8e-d1b8-4957-82ba-db3bd35359e1.png)
 
+![image](https://user-images.githubusercontent.com/42829215/171880281-d462c639-a831-47aa-be33-5cb1133bf5fd.png)
+![image](https://user-images.githubusercontent.com/42829215/171880289-34d6c901-d813-4d2b-ab85-76e70342c281.png)
 
+![image](https://user-images.githubusercontent.com/42829215/171880599-82c4d14c-2647-4966-967f-ab557e9596ce.png)
 
+![image](https://user-images.githubusercontent.com/42829215/171880777-ba6e8467-34b9-4316-ab70-a13f76b4773d.png)
+![image](https://user-images.githubusercontent.com/42829215/171881080-cda4c489-993b-4b93-bbc7-fa0ac5df68c1.png)
 
+![image](https://user-images.githubusercontent.com/42829215/171881090-66a7962f-1756-42e1-8fbd-8f41f09e0271.png)
 
+![image](https://user-images.githubusercontent.com/42829215/171881410-409075f6-7cdf-4b1b-9faf-afccdfb1afd6.png)
+![image](https://user-images.githubusercontent.com/42829215/171881563-b3f4cb93-1455-43c4-a759-6cbdd81c9c5a.png)
 
+![image](https://user-images.githubusercontent.com/42829215/171881619-fbdd2dbb-b225-4120-8702-db3ad97e6bbe.png)
+![image](https://user-images.githubusercontent.com/42829215/171881693-b1021bf6-b315-403f-a3a8-d7f7cfe2a96d.png)
 
+![image](https://user-images.githubusercontent.com/42829215/171881895-45180388-2c1c-434d-b222-308574f30302.png)
+![image](https://user-images.githubusercontent.com/42829215/171881905-aa8d0059-c3a7-44d0-b752-c441c1561bd6.png)
 
+![image](https://user-images.githubusercontent.com/42829215/171882043-9d67fae0-0939-4052-a4f0-05181c3fe950.png)
+![image](https://user-images.githubusercontent.com/42829215/171882063-961e9c80-48e4-4ff3-8ea2-8bd8be15d2ba.png)
 
-
+![image](https://user-images.githubusercontent.com/42829215/171882162-dd538a19-ffc6-4fbd-9459-071c58f58653.png)
 
 
