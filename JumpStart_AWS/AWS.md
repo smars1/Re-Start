@@ -3,7 +3,7 @@
   - [Link](https://awsrestart.instructure.com/courses/866/modules/items/385610)
 - [System Manager](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#system-manager)
   - [Link](https://awsrestart.vitalsource.com/reader/books/JWAWSSYSTEMSMANAGER35ES/pageid/0) 
-- [AWS S3: Alojamiento de un sitio web estatico]()
+- [AWS S3: Alojamiento de un sitio web estatico](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#aws-s3-alojamiento-de-un-sitio-web-estatico)
   - [Practica-LAB-S3-Creacion de un sitio web estatico]()
     - [link](https://awsrestart.instructure.com/courses/866/modules/items/385623) 
 
@@ -128,6 +128,12 @@ En esta actividad, practicará el uso de la AWS Command Line Interface (AWS CLI)
 
 ![image](https://user-images.githubusercontent.com/42829215/171949876-ca6327d2-e90b-4400-9072-3122afd99b89.png)
 
+
+
+### Crear bucket S3 por consola
+```
+aws s3api create-bucket mybucket --region us-east-1 --create-bucket-configuration LocationConstraint=us-east-1
+```
 ### Creando un usuario nuevo IAM
 ```.sh
 aws iam create-user --user-name awsS3user
@@ -138,3 +144,19 @@ Dentro de ```vim``` podemos usar ```ESQ```  ```/name-busqueda``` esto subraya pa
 ./update-website.sh
 ```
 
+### preparar s3 para alojar web estatico
+```.sh
+aws s3 website s3://<my-bucket>/ --index-document index.html
+```
+### Subir pagina estatica archivos por CLI AWS a S3
+```.sh
+aws s3 cp /home/ec2-user/sysops-activity-files/static-website/ s3://<my-    bucket>/ --recursive --acl public-read
+```
+Aqui hacemos un test
+```.sh
+aws s3 cp C:\Users\diego\Desktop\Portafolio\Web\HTML s3://colmenaiot.ml/ --recursive --acl public-read
+```
+### Verificamos que los archivos se subieron al bucket
+```.sh
+aws s3 ls <my-bucket>
+```
