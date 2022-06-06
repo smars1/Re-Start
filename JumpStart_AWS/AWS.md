@@ -6,6 +6,10 @@
 - [AWS S3: Alojamiento de un sitio web estatico](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#aws-s3-alojamiento-de-un-sitio-web-estatico)
   - [Practica-LAB-S3-Creacion de un sitio web estatico]()
     - [link](https://awsrestart.instructure.com/courses/866/modules/items/385623) 
+- [Computo en la nube AWS EC2]() 
+  - [Link Computo AWS](https://awsrestart.vitalsource.com/reader/books/JWCOMPUTINGONAWS35ES/pageid/0) 
+  - [Gestion de instancias]()
+  - [Laboratorio EC2]()
 
 ## AWS Identity and access management (IAM) 
 
@@ -129,7 +133,6 @@ En esta actividad, practicará el uso de la AWS Command Line Interface (AWS CLI)
 ![image](https://user-images.githubusercontent.com/42829215/171949876-ca6327d2-e90b-4400-9072-3122afd99b89.png)
 
 
-
 ### Crear bucket S3 por consola
 ```
 aws s3api create-bucket mybucket --region us-east-1 --create-bucket-configuration LocationConstraint=us-east-1
@@ -160,3 +163,139 @@ aws s3 cp C:\Users\diego\Desktop\Portafolio\Web\HTML s3://colmenaiot.ml/ --recur
 ```.sh
 aws s3 ls <my-bucket>
 ```
+
+# Computo en la nube AWS EC2
+![image](https://user-images.githubusercontent.com/42829215/172184459-aba9f19d-99c3-4278-8203-19eff03142ba.png)
+![image](https://user-images.githubusercontent.com/42829215/172185125-56e3b800-c84e-43a5-ad51-1eaf40733fa8.png)
+![image](https://user-images.githubusercontent.com/42829215/172185354-71d9de33-6d14-46ae-8797-f5aef5272ddd.png)
+![image](https://user-images.githubusercontent.com/42829215/172185479-b314c56b-b9cc-4123-bcc8-344e65765b1e.png)
+![image](https://user-images.githubusercontent.com/42829215/172185535-42cb37c7-dea4-451e-9634-6828fbd1ad12.png)
+![image](https://user-images.githubusercontent.com/42829215/172185919-a1dbed4e-f730-4fdc-b19b-a7655e16af58.png)
+
+## Aprovicionamiento de instancias
+
+La siguiente explicacion es una descripcion general de lo que debe hacer para provicionar una instancia EC2:
+
+- 1. Se comienza con una Amazon Machine Image (AMI) 
+- 2. Ubicacion de red y redireccionamiento 
+- 3. EL tipo de almacenamiento, puede ser efimero o por volumen EBS
+- 4. Tambien debe configurar un grupo de segurirad o ultilizar uno existente, este define que puertos tendran permitido el trafico en la red
+- 5. Especificar el Tipo de claves por ejemplo el par de claves o sin claves, generalmente se utilzia el par de llaves para el protocolo SSH y el RDP
+- 6. Por ultimo puede tambien establecer de forma opcional datos de usuario de forma opcional al lanzar una isntancia, con el fin de automatizar las instalaciones y configuraciones de la maquina virtual cuando se inicia
+
+![image](https://user-images.githubusercontent.com/42829215/172189235-2a4e4a4b-48c4-462f-9d5d-7cd195bea710.png)
+
+## Amazon Machine Image
+
+Una AMI (Amazon Machine Image) proporciona la informacion de necesaria para lanzar una instancia. Debe especificar una AMI de origen al lanzar una instancia. Cuando necesite varias instancias con la misma configuracion, puede lanzarlas desde la misma AMI.
+
+Cuando necesite instancias con distintas configuraciones, puede usar distintas AMI para lanzarlas. Puede crear una nueva AMI a partir de una instancia en cualquier momento.
+
+- Una AMI incluye una plantilla para el volumen raiz de la instancia 
+- La AMI tambien incluye los permisos de lanzamiento
+- La AMI tambien incluye mapeod de dispositivo de bloques, que especifican columenes de almacenamiento adicionales si es que los hay para asociar a la instancia cuando se lanza
+- 
+![image](https://user-images.githubusercontent.com/42829215/172190641-5e3dbb94-d5c3-403f-a433-c98278ab8b22.png)
+
+## Redes de Amazon EC2
+Cuando se crea una instancia EC2, esta se lanza en un entorno de red. Normalmente se lanza en una VPC (Virtual Private Cloud) que se crea en AWS VPC, la VPC define una red virtual en su propia area asilada de forma logica dentro de la nube de AWS. Una VPC es practicamente identica a una red tradicional que puede ser opereada por el usuario en su propio centro de datos.
+
+En la VPC, define una o varias subredes. Las subredes son segmentos de red logicos dentro de una VPC y cada subred existe con una sola zona de disponibilidad
+![image](https://user-images.githubusercontent.com/42829215/172193848-71bef1b6-5edf-408d-83ad-c92041b56903.png)
+
+![image](https://user-images.githubusercontent.com/42829215/172192274-6f999ccb-a2e4-49fd-a2dc-848719e51062.png)
+
+## Tipos de direcciones IP
+
+![image](https://user-images.githubusercontent.com/42829215/172193979-0d7d56ac-c077-4fdb-96a5-4fab0d736b1a.png)
+![image](https://user-images.githubusercontent.com/42829215/172194181-922be032-bae8-4104-84d3-3cf5074c7704.png)
+![image](https://user-images.githubusercontent.com/42829215/172194213-6fd3eeba-f5c3-463f-9765-8a8788962b0e.png)
+
+## Grupos de seguridad
+
+![image](https://user-images.githubusercontent.com/42829215/172194313-14e58a62-1f70-4d18-a78e-3763fe7ac9bc.png)
+Cada instancia debe tener al menos un grupo de seguridad asociado. Los grupos de seguridad son basicamnente firewalls con estodos que rodean a una o mas instancias EC2 para darte un control de trafico de red.
+
+![image](https://user-images.githubusercontent.com/42829215/172195404-f634e363-d7ae-4e99-becd-1b364f73f648.png)
+![image](https://user-images.githubusercontent.com/42829215/172195418-77c65ff3-4239-48e7-8993-3b1d533310d3.png)
+
+## Ejemplo de grupos de seguridad
+
+![image](https://user-images.githubusercontent.com/42829215/172195736-043b00ef-2dba-427b-9078-c83cfb5bce80.png)
+![image](https://user-images.githubusercontent.com/42829215/172195848-1b7804f0-87d7-4f64-9399-41d88ba021e2.png)
+![image](https://user-images.githubusercontent.com/42829215/172195860-3c24e4e4-8949-43da-9fad-118954be94b6.png)
+
+## Perfil de instancia
+
+![image](https://user-images.githubusercontent.com/42829215/172196020-4990f2f3-4896-4b5e-8a9c-b6f4d38c60a2.png)
+![image](https://user-images.githubusercontent.com/42829215/172196733-809c6001-9a96-4aaf-8fd1-6a8cf677f3a0.png)
+![image](https://user-images.githubusercontent.com/42829215/172196807-025e4a6a-f49c-4f2d-98a9-06bae4f00484.png)
+![image](https://user-images.githubusercontent.com/42829215/172196900-d04ffa31-2afd-4ea6-bbff-06bd9a761bc9.png)
+![image](https://user-images.githubusercontent.com/42829215/172196967-1cb1962d-47d2-42e6-9911-0d966bed3cee.png)
+
+## Datos de usuarios 
+| Script que se ejecuta en el lanzamiento| El script es ejecutado por |
+| ------ | ------- |
+| Script de linux | CLoud-init en linux|
+| Lote de Microsoft Windows o scripts de PowerShell | Servcio EC2Lanunch en Microsoft Windows |
+
+![image](https://user-images.githubusercontent.com/42829215/172198252-128ad26b-70fc-4ddd-8058-95c9a6146a6a.png)
+![image](https://user-images.githubusercontent.com/42829215/172198262-0f09c711-ae7d-4da0-ac35-eb3ad0f1af69.png)
+
+![image](https://user-images.githubusercontent.com/42829215/172203912-45c824b7-c2fc-4640-b2f6-52915aeb626f.png)
+![image](https://user-images.githubusercontent.com/42829215/172204099-f2111eb9-822d-4ea9-9c53-7d06c480cd8c.png)
+
+## Metadatos
+![image](https://user-images.githubusercontent.com/42829215/172204215-f968e62f-4992-4fa4-b8c1-8d57409ce82d.png)
+![image](https://user-images.githubusercontent.com/42829215/172204297-2ff631af-8d7c-45c6-a3e3-018009732a9a.png)
+![image](https://user-images.githubusercontent.com/42829215/172205432-4912992e-084b-499c-96dc-95cdc08ca1fe.png)
+![image](https://user-images.githubusercontent.com/42829215/172205452-fcfe4e33-9343-4cac-8afd-ecf3ffa7dca7.png)
+
+## Recuperar datos de usuario de la instancia EC2
+![image](https://user-images.githubusercontent.com/42829215/172205764-1cd02073-0b29-4587-9245-bdc45e2fec12.png)
+![image](https://user-images.githubusercontent.com/42829215/172205782-fc892a1b-c8ac-4aa6-adf6-59f82e8c37be.png)
+![image](https://user-images.githubusercontent.com/42829215/172205973-32b1b93c-4ac0-412c-a2e7-a7c67a1355d7.png)
+![image](https://user-images.githubusercontent.com/42829215/172205995-330d8131-fc0a-4788-b757-0fecf1fa546b.png)
+![image](https://user-images.githubusercontent.com/42829215/172206037-ebd5cb58-7d81-4fe7-b61c-b8925d995eff.png)
+![image](https://user-images.githubusercontent.com/42829215/172206113-c514bfe0-36ed-4177-8d75-2035912b65f1.png)
+![image](https://user-images.githubusercontent.com/42829215/172206266-b2ab2a0d-2cc9-4b81-907b-fb2febb77c65.png)
+
+## Par de claves
+![image](https://user-images.githubusercontent.com/42829215/172206368-8a91484d-23a5-4b52-a5fb-e6bd17a215a7.png)
+
+## Configure su propia instancia de seguridad
+![image](https://user-images.githubusercontent.com/42829215/172206546-c22f2224-1096-40a6-b6d1-6ced4de70031.png)
+![image](https://user-images.githubusercontent.com/42829215/172206656-8bff4469-2f67-4ab4-81ad-49460393afda.png)
+![image](https://user-images.githubusercontent.com/42829215/172209453-a2ad4a3e-18a7-4bf1-948d-17e42d60fcc9.png)
+![image](https://user-images.githubusercontent.com/42829215/172209519-0b5b7f8a-ce4a-4c70-805f-04e50d78c9d9.png)
+![image](https://user-images.githubusercontent.com/42829215/172209710-2c9a627c-34c1-4b2e-b619-b68b57e436c6.png)
+
+
+![image](https://user-images.githubusercontent.com/42829215/172209741-6c060d3f-4d9f-42f8-86d4-2a7c834eaafe.png)
+![image](https://user-images.githubusercontent.com/42829215/172209795-0aed5a70-df26-419b-93a9-2ef834b581bd.png)
+
+## Aprendizajes clave
+![image](https://user-images.githubusercontent.com/42829215/172209870-2ff7b3c6-ff03-4125-9616-3ef5fb4ddf51.png)
+
+# Gestion de instancias 
+![image](https://user-images.githubusercontent.com/42829215/172211414-db5cc6c7-88b7-40c9-aca2-dfcd503d4220.png)
+![image](https://user-images.githubusercontent.com/42829215/172211511-40f6937a-d5a4-4987-b4fd-efb0bf48adba.png)
+![image](https://user-images.githubusercontent.com/42829215/172211583-435db6c3-6fce-4a75-883d-95558cfa6cb5.png)
+![image](https://user-images.githubusercontent.com/42829215/172211591-3bb05890-c81f-4d56-ad5b-14709b36b891.png)
+![image](https://user-images.githubusercontent.com/42829215/172211725-446acf5b-817c-407b-93f0-1b0fc715dca8.png)
+![image](https://user-images.githubusercontent.com/42829215/172211816-23907894-ee14-4a19-808a-cb2b086cffb5.png)
+![image](https://user-images.githubusercontent.com/42829215/172215847-cef7098b-0742-42b9-8f02-c628424db890.png)
+![image](https://user-images.githubusercontent.com/42829215/172215980-abd40c80-3b8f-4d0f-84c7-bcbddf4acc4a.png)
+![image](https://user-images.githubusercontent.com/42829215/172216187-31da349c-3278-4025-a389-ac0c846d4523.png)
+![image](https://user-images.githubusercontent.com/42829215/172216336-f00d7baa-3488-4c76-86b9-56643c4db14a.png)
+![image](https://user-images.githubusercontent.com/42829215/172216858-b600b28f-125d-48a0-a628-b6d40dca4316.png)
+![image](https://user-images.githubusercontent.com/42829215/172216910-b0262cb5-224f-4152-a9cc-1fa731c2a67c.png)
+![image](https://user-images.githubusercontent.com/42829215/172216971-7c60aeaf-ace6-4316-81c5-699808eae02d.png)
+![image](https://user-images.githubusercontent.com/42829215/172217047-e05c9890-0d84-4c22-acf6-c01574e57a92.png)
+![image](https://user-images.githubusercontent.com/42829215/172217129-945d8112-c28b-4bae-bc62-3217ea3efe7b.png)
+![image](https://user-images.githubusercontent.com/42829215/172217242-99be4dad-787b-459d-a5de-ba2e866c063b.png)
+
+# Laboratorio EC2 
+un bastión host puede ser utilizado con cara a la calle, no contiene datos es como una cáscara, tampoco tiene base de datos unicamente ese equipo se conecta con los equipos internos por un puerto específico, los usuarios tienen la sensación de acceder a los datos directamente
+
+
