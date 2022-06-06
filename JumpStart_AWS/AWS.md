@@ -9,7 +9,7 @@
 - [Computo en la nube AWS EC2](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#computo-en-la-nube-aws-ec2) 
   - [Link Computo AWS](https://awsrestart.vitalsource.com/reader/books/JWCOMPUTINGONAWS35ES/pageid/0) 
   - [Gestion de instancias]()
-  - [Laboratorio EC2]()
+  - [Laboratorio EC2](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#laboratorio-ec2)
 
 ## AWS Identity and access management (IAM) 
 
@@ -296,6 +296,229 @@ Cada instancia debe tener al menos un grupo de seguridad asociado. Los grupos de
 ![image](https://user-images.githubusercontent.com/42829215/172217242-99be4dad-787b-459d-a5de-ba2e866c063b.png)
 
 # Laboratorio EC2 
+- [link](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#laboratorio-ec2)
 un bastión host puede ser utilizado con cara a la calle, no contiene datos es como una cáscara, tampoco tiene base de datos unicamente ese equipo se conecta con los equipos internos por un puerto específico, los usuarios tienen la sensación de acceder a los datos directamente
+
+Traditional methods of deploying servers and configuring security are complex and often involve multiple teams and long delays. Fortunately, it is quick and easy to deploy secure infrastructure in the cloud. As a Systems Operator, you can automate many of these processes using the AWS Command-Line Interface.
+
+In this lab you will:
+
+## Lab - Creating Amazon EC2 Instances
+
+Traditional methods of deploying servers and configuring security are complex and often involve multiple teams and long delays. Fortunately, it is quick and easy to deploy secure infrastructure in the cloud. As a Systems Operator, you can automate many of these processes using the AWS Command-Line Interface.
+In this lab you will:
+
+- Launch an Amazon EC2 instance using the management console
+- Launch an Amazon EC2 instance using the AWS Command-Line Interface (AWS CLI)
+
+The final architecture will be:
+
+![image](https://user-images.githubusercontent.com/42829215/172237546-42fe9532-f842-4118-a047-4b08c309b437.png)
+
+If you have time, an optional Challenge section will then have you troubleshoot some issues with Amazon EC2 instances.
+
+Task 1: Launch an Amazon EC2 Instance using the Management Console
+In this task, you will launch an Amazon EC2 instance using the management console. The instance will be a Bastion Server, from which you can use the AWS Command-Line Interface (AWS CLI).
+
+In the AWS Management Console, on the Services  menu, click EC2.
+Click Launch Instances
+
+
+- ### Step 1: Choose an Amazon Machine Image (AMI)
+This step allows you to choose an AMI, which contains a copy of the disk volume that will be used to launch the instance.
+
+ Examine the list of AMIs that are displayed, showing many versions of Microsoft Windows and Linux. These disk images are regularly updated to incorporate security patches and software that helps you use AWS services. You can also create your own AMI that includes your own data and applications, or you can select pre-built commercial applications from the AWS Marketplace.
+
+Your Bastion Server will use Amazon Linux 2.
+
+Beside the Amazon Linux 2 AMI (at the top), click Select
+
+- ### Step 2: Choose an Instance Type
+This step allows you to choose an Instance Type, which determines the resources that will be allocated to your EC2 instance. Each Instance Type allocates a combination of virtual CPUs, memory, disk storage and network performance.
+
+Instance Types are divided into families such as Compute-optimized, Memory-optimized and Storage-Optimized. The name of the Instance Type includes a family identifier, such as t3 and m5. The number indicates the generation of the instance, so m5 is newer than m4.
+
+Your application will use a t3.micro Instance Type, which is a small instance that can burst above baseline performance when it is busy. It is ideal for development, testing and for applications that have bursty workloads.
+
+Select  t3.micro
+Click Next: Configure Instance Details
+
+
+- ### Step 3: Configure Instance Details
+This step allows you to configure instance details, such as the number of instances to launch and the network configuration. You can hover over the  icons to view a description of each field.
+
+You will launch the instance in a public subnet within the Lab VPC network.
+
+Configure these settings:
+
+Network: Lab VPC
+Subnet: Public Subnet
+IAM role: Bastion-Role
+The Bastion-Role grants permission to applications running on the instance to make requests to the Amazon EC2 service. This is required for the second half of this lab, where you will use the AWS CLI to communicate with the EC2 service.
+
+Click Next: Add Storage
+
+
+- ### Step 4: Add Storage
+This step can be used to add additional Amazon Elastic Block Store (EBS) disk volumes and configure their size and performance.
+
+You can hover over the  icons to view a description of each field.
+
+You will use the default disk size, so no changes are required.
+
+Click Next: Add Tags
+
+
+Tags allow you to categorize your AWS resources in different ways, such as by purpose, owner, or environment. This is useful when you have many resources of the same type — you can quickly identify a specific resource by their tags. Each tag consists of a Key and a Value, both of which you define.
+
+Click Add Tag then configure:
+
+Key: Name
+Value: Bastion Server
+This name will appear on the instance in the EC2 management console.
+
+Click Next: Configure Security Group
+
+
+- ### Step 5: Add Tags
+Tags allow you to categorize your AWS resources in different ways, such as by purpose, owner, or environment. This is useful when you have many resources of the same type — you can quickly identify a specific resource by their tags. Each tag consists of a Key and a Value, both of which you define.
+
+Click Add Tag then configure:
+
+Key: Name
+Value: Bastion Server
+This name will appear on the instance in the EC2 management console.
+
+Click Next: Configure Security Group
+
+ 
+
+- ### Step 6: Configure Security Group
+You will create a new Security Group that permits SSH connections. This security group will allow you to log in to the Bastion Server via SSH.
+
+Configure these settings:
+
+Security group name: Bastion security group
+Description: Permit SSH connections
+Permissions for inbound access via SSH (port 22) have already been configured by default.
+
+Click Review and Launch
+
+ 
+
+- ### Step 7: Review Instance Launch
+This step displays a summary of the configuration for the instance you are about to launch.
+
+Click Launch
+
+A Select an existing key pair or create a new key pair window will appear.
+
+Select  I acknowledge that....
+
+Click Launch Instances
+
+Your instance will now be launched.
+
+Click View Instances
+
+The Bastion Server will appear in a pending state, which means it is being launched. It will then change to running, which indicates that the instance has started booting.
+
+Wait for the Instance State to change to  running.
+
+Select  Bastion Server.
+
+Review the information displayed in the Description tab in the lower half of the page. It includes information about the instance type, security settings and network settings.
+
+# Task 2: Log into the Bastion Server
+In this task, you will log into the Bastion Server that you just created.
+
+Copy the IPv4 Public IP (shown in the lower half of the page) to your clipboard.
+
+ It might take a minute until the IPv4 Public IP value is displayed.
+
+The following instructions now vary slightly depending on whether you are using Windows or Mac/Linux.
+
+## Windows Users: Using SSH to Connect
+ These instructions are for Windows users only.
+
+If you are using macOS or Linux, skip to the next section.
+
+Read through the three bullet points in this step before you start to complete the actions, because you will not be able see these instructions when the Details panel is open.
+
+Click on the Details drop down menu above these instructions you are currently reading, and then click Show. A Credentials window will open.
+Click on the Download PPK button and save the labsuser.ppk file. Typically your browser will save it to the Downloads directory.
+Then exit the Details panel by clicking on the X.
+Download needed software.
+
+You will use PuTTY to SSH to Amazon EC2 instances. If you do not have PuTTY installed on your computer, download it here.
+Open putty.exe
+
+Configure PuTTY to not timeout:
+
+Click Connection
+Set Seconds between keepalives to 30
+This allows you to keep the PuTTY session open for a longer period of time.
+
+Configure your PuTTY session:
+
+- Click Session
+- Host Name (or IP address): Paste the IPv4 Public IP value you copied to your clipboard earlier in the lab.
+- Back in PuTTy, in the Connection list, expand  SSH
+- Click Auth (don't expand it)
+- Click Browse
+- Browse to and select the lab#.ppk file that you downloaded
+- Click Open to select it
+- Click Open
+- Click Yes, to trust the host and connect to it.
+
+When prompted login as, enter: ec2-user
+
+This will connect you to the EC2 instance.
+
+Windows Users: Click here to skip ahead to the next task.
+
+
+ 
+
+Mac  and Linux  Users
+These instructions are for Mac/Linux users only. If you are a Windows user, skip ahead to the next task.
+
+Read through the three bullet points in this step before you start to complete the actions, because you will not be able see these instructions when the Details panel is open.
+
+Click on the Details drop down menu above these instructions you are currently reading, and then click Show. A Credentials window will open.
+Click on the Download PEM button and save the labsuser.pem file.
+Then exit the Details panel by clicking on the X.
+Open a terminal window, and change directory cd to the directory where the labsuser.pem file was downloaded.
+
+For example, run this command, if it was saved to your Downloads directory:
+
+cd ~/Downloads
+Change the permissions on the key to be read only, by running this command:
+
+chmod 400 labsuser.pem
+Return to the terminal window and run this command (replace <public-ip> with the IPv4 Public IP value you copied to your clipboard earlier in the lab):
+
+ssh -i labsuser.pem ec2-user@<public-ip>
+Type yes when prompted to allow a first connection to this remote SSH server.
+
+Because you are using a key pair for authentication, you will not be prompted for a password.
+
+
+Now that you are connected to the Bastion Server, you can use the AWS CLI to call AWS services.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
