@@ -4,7 +4,7 @@
 - [System Manager](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#system-manager)
   - [Link](https://awsrestart.vitalsource.com/reader/books/JWAWSSYSTEMSMANAGER35ES/pageid/0) 
 - [AWS S3: Alojamiento de un sitio web estatico](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#aws-s3-alojamiento-de-un-sitio-web-estatico)
-  - [Practica-LAB-S3-Creacion de un sitio web estatico]()
+  - [Practica-LAB-S3-Creacion de un sitio web estatico](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#crear-bucket-s3-por-consola)
     - [link](https://awsrestart.instructure.com/courses/866/modules/items/385623) 
 - [Computo en la nube AWS EC2](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#computo-en-la-nube-aws-ec2) 
   - [Link Computo AWS](https://awsrestart.vitalsource.com/reader/books/JWCOMPUTINGONAWS35ES/pageid/0) 
@@ -507,11 +507,22 @@ Because you are using a key pair for authentication, you will not be prompted fo
 Now that you are connected to the Bastion Server, you can use the AWS CLI to call AWS services.
 
 
+# Challen ec2 
+  
+  
+#  Elastic Beanstalk
+  
+Es una plataforma como servicio PassS que facilita la rapida implementacion, el escalado y las amidnistracion de aplicaciones
+![image](https://user-images.githubusercontent.com/42829215/172453816-93ad07c4-d5df-42c7-9111-939a7cb1d960.png)
+
+Elastic beanstalk admite una amplia variedd de plataformas y lenguajes de programacion: 
+![image](https://user-images.githubusercontent.com/42829215/172454262-e60db64e-0e25-4f37-b2c6-f6f1e28ad5aa.png)
 
 
+![image](https://user-images.githubusercontent.com/42829215/172454230-5f7df0b9-5134-459e-bf77-0efff04cc949.png)
 
 
-
+![image](https://user-images.githubusercontent.com/42829215/172454278-c58828c2-bbd5-4644-a029-5852fb64ae51.png)
 
 
 
