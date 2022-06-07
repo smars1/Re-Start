@@ -10,6 +10,8 @@
   - [Link Computo AWS](https://awsrestart.vitalsource.com/reader/books/JWCOMPUTINGONAWS35ES/pageid/0) 
   - [Gestion de instancias]()
   - [Laboratorio EC2](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#laboratorio-ec2)
+- [AWS Elastic beanstalk](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#elastic-beanstalk)
+  -[Link](https://awsrestart.instructure.com/courses/866/modules/items/385632) 
 
 ## AWS Identity and access management (IAM) 
 
