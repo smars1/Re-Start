@@ -12,7 +12,8 @@
   - [Laboratorio EC2](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#laboratorio-ec2)
 - [AWS Elastic beanstalk](https://github.com/smars1/Re-Start/blob/main/JumpStart_AWS/AWS.md#elastic-beanstalk)
   - [Link](https://awsrestart.instructure.com/courses/866/modules/items/385632) 
-  - 
+- [ELB - Uso de alarmas - Liderar el desafío de predicción de escalado automático]()
+  - [Link](https://awsrestart.vitalsource.com/reader/books/AUTOSCALINGPREDIC310ES/pageid/1)
 
 ## AWS Identity and access management (IAM) 
 
@@ -532,6 +533,16 @@ Elastic beanstalk admite una amplia variedd de plataformas y lenguajes de progra
 
 
 
+
+
+# Liderar el desafío de predicción de escalado automático
+## Informática (escalado y resolución de nombres) Desafío
+
+Ahora veremos un ejemplo de cómo predecir el promedio de utilización de la CPU a medida que las políticas de escalado se inician de acuerdo con las alarmas.
+
+Ahora veremos un ejemplo de cómo predecir el promedio de utilización de la CPU a medida que las políticas de escalado se inician de acuerdo con las alarmas.
+
+![image](https://user-images.githubusercontent.com/42829215/172935472-87f8993a-a5d1-4024-bcf6-85d7862ad574.png)
 
 
 
