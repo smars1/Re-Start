@@ -14,7 +14,9 @@
   - [Link](https://awsrestart.instructure.com/courses/866/modules/items/385632) 
 - [ELB - Uso de alarmas - Liderar el desafío de predicción de escalado automático]()
   - [Link](https://awsrestart.vitalsource.com/reader/books/AUTOSCALINGPREDIC310ES/pageid/1)
-
+- [AWS Route 53]()
+  - [link](https://awsrestart.instructure.com/courses/866/modules/items/385643) 
+  
 ## AWS Identity and access management (IAM) 
 
 ![image](https://user-images.githubusercontent.com/42829215/171665437-f29372cb-bcd9-4a6a-9605-c84bddb14951.png)
@@ -500,9 +502,11 @@ cd ~/Downloads
 Change the permissions on the key to be read only, by running this command:
 
 chmod 400 labsuser.pem
+
 Return to the terminal window and run this command (replace <public-ip> with the IPv4 Public IP value you copied to your clipboard earlier in the lab):
 
 ssh -i labsuser.pem ec2-user@<public-ip>
+  
 Type yes when prompted to allow a first connection to this remote SSH server.
 
 Because you are using a key pair for authentication, you will not be prompted for a password.
@@ -512,7 +516,6 @@ Now that you are connected to the Bastion Server, you can use the AWS CLI to cal
 
 
 # Challen ec2 
-  
   
 #  Elastic Beanstalk
   
@@ -545,5 +548,4 @@ Ahora veremos un ejemplo de cómo predecir el promedio de utilización de la CPU
 ![image](https://user-images.githubusercontent.com/42829215/172935472-87f8993a-a5d1-4024-bcf6-85d7862ad574.png)
 
 
-
-
+  
