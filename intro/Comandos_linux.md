@@ -192,6 +192,16 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
     useradd UserName
    ```
    
+   ```.sh 
+   useradd <Newuser> -p <P@ssword1234!> 
+   ```
+   ### Mostrar lista de usuarios
+   Podemos usarlo despues de crear un usuario para comprobar que se haya creado exitosamente.
+   ```.sh 
+   sudo getent passwd | cut -d: -f1 
+   ```
+   
+   
     #### opciones
     Las opciones permiten personalizar la cuenta del usuario al momento de su creacion. El campo de comentarios se utilza a menudo para colocar el nombre completo del     usuario
     - -c Comentario 
@@ -209,10 +219,7 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
     ```.sh
     useradd -d /users/UserName UserName
     ```
- - ### Comando usermod
-   Este comando se utilza para modificar o cambiar una cuenta de usuario existente, en parte o en su totalidad.
-   
-   
+
  - ### Comando userdel
    Utilice el comando userdel para eliminar una cuenta de usuario, utilice la opcion -r para borrar tambien el directorio principal del usuario.
    
@@ -232,7 +239,26 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
    ```.sh
    passwd UserName
    ```
+
+## Comandos de administracion de grupos
+   La ubicacion de almacenamiento de grupo es el archivo ***/etc/group/***
+  - ### Comando groudpad
+  Crea un grupo 
+  ```.sh
+  groupadd <GroupName>
+  ```
+  - ### Comando usermod
+   Este comando se utilza para modificar o cambiar una cuenta de usuario existente, en parte o en su totalidad.
+   ```.sh 
+   usermod -a -G <GroupName> <UserName>
+   ```
+ ### Comando para verificar grupo creado o usuario añadiro a grupo
+   ```.sh
+   getent group
+   ```
    
+# Comandos de busqueda
+ 
    ## Comando para buscar texto
  - ### Comando grep
    grep es una comando de linux para buscar texto. se puede utilzar de la siguiente manera para buscar la palabra hello en los archivos que se encuentran en              /etc/passwd: 
@@ -249,9 +275,11 @@ La mejor manera de describir la sintaxis de Linux es la siguiente, constan  de u
    - ls enumera todos los archivos de la carpeta /etc/passwd.
    - | redirige el resultado al segundo comando grep  que busca la palabra hello en la lista de archivos
    
-   ## Comandos de administracion de grupos
-   La ubicacion de almacenamiento de grupo es el archivo ***/etc/group/***
-  - ### Comando groudpad
-    
-   
-   
+
+## Comando cat ejemplo de uso:
+
+Lea y busque el archivo /tmp/log/secure mediante la búsqueda de la palabra LOGIN, para ello, escriba sudo cat /tmp/log/secure | grep password > SharedFolders/logins.csv en la terminal y presione ENTER (Intro).
+
+```.sh 
+sudo cat /tmp/log/secure | grep password > SharedFolders/logins.csv
+```
